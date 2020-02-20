@@ -1,0 +1,50 @@
+.layui-layout-admin .layui-side{
+  top: 108px;
+  left: 30px;
+  bottom: 44px;
+  width: 180px;
+  background: url('../images/leftBg.png') no-repeat;
+  background-size: cover;
+  border-radius: 5px;
+}
+.layui-nav-tree{
+  width: 180px;
+}
+.layui-nav-tree .layui-nav-bar{
+  display: none;
+}
+.layui-side .layui-nav .layui-nav-item>a{
+  color: #444;
+}
+.layui-side .layui-nav .layui-nav-item>a:hover{
+  color: #2F87F5;
+}
+.layui-nav-tree .layui-nav-item a:hover{
+  background: none;
+}
+.layui-nav-tree .layui-nav-item a i{
+  float: right;
+}
+.layui-nav-itemed>.layui-nav-child{
+  background-color: none;
+}
+.layui-nav-tree .layui-nav-child a{
+  width: 60%;
+  background: #F2F5FC;
+  border-radius: 20px;
+  margin-left: 10%;
+  margin-bottom: 10px;
+  color: #666666;
+}
+.layui-nav-tree .layui-nav-child a:hover{
+  background: #2F87F5;
+  color: #fff;
+}
+.layui-layout-body{
+  background: #F2F2F2;
+}
+.layui-layout-admin .layui-body{
+  top: 108px;
+  left: 230px;
+  background: #fff;
+}

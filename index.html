@@ -6,35 +6,56 @@
   <title>深圳计量院认证系统</title>
   <link rel="stylesheet" href="layui/css/layui.css">
   <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/new.css">
 </head>
 <body class="layui-layout-body">
 <div class="layui-layout layui-layout-admin">
   <div class="layui-header">
     <div class="layui-logo">
-      <img src="images/LOGO_1.png" alt="">
-      <div class="angle"></div>
+      <img src="images/titleLogo.png" alt="">
     </div>
     <!-- 头部区域（可配合layui已有的水平导航） -->
     <ul class="layui-nav layui-layout-left myheader">
-      <li class="layui-nav-item"><a href="javascript:;" class="size18">产品认证</a></li>
-      <li class="layui-nav-item"><a href="javascript:;" class="size18">机构概况</a></li>
-      <li class="layui-nav-item"><a href="javascript:;" class="size18">新闻中心</a></li>
-      <li class="layui-nav-item"><a href="javascript:;" class="size18">技术服务</a></li>
-      <li class="layui-nav-item"><a href="javascript:;" class="size18">公开文件</a></li>
-      <li class="layui-nav-item"><a href="javascript:;" class="size18">培训业务</a></li>
-      <li class="layui-nav-item"><a href="javascript:;" class="size18">证书查询联系方式</a></li>
+      <li class="layui-nav-item"><a href="javascript:;">机构概况</a></li>
+      <li class="layui-nav-item"><a href="javascript:;">新闻中心</a></li>
+      <li class="layui-nav-item"><a href="javascript:;">认证服务</a></li>
+      <li class="layui-nav-item"><a href="javascript:;">技术服务</a></li>
+      <li class="layui-nav-item"><a href="javascript:;">公开文件</a></li>
+      <li class="layui-nav-item"><a href="javascript:;">培训业务</a></li>
+      <li class="layui-nav-item"><a href="javascript:;">证书查询</a></li>
+      <li class="layui-nav-item"><a href="javascript:;">联系方式</a></li>
     </ul>
     <ul class="layui-nav layui-layout-right myheader">
-      <li class="layui-nav-item"><a href="javascript:;" class="size14">ADMIN</a></li>
-      <li class="layui-nav-item"><a href="login.html" class="size14">退出登录</a></li>
+      <li class="layui-nav-item"><a href="javascript:;">深圳宝路仕新能源科技股份有限公司，欢迎您</a></li>
+      <li class="layui-nav-item"><a href="javascript:;">ADMIN</a></li>
+      <li class="layui-nav-item"><a href="login.html">退出登录</a></li>
     </ul>
   </div>
   
   <div class="layui-side">
     <div class="layui-side-scroll">
       <!-- 左侧导航区域（可配合layui已有的垂直导航） -->
-      <ul class="layui-nav layui-nav-tree leftNav mynavbar"  lay-filter="test">
-        <li class="layui-nav-item layui-nav-itemed yiji ">
+      <ul class="layui-nav layui-nav-tree" lay-filter="test">
+        <!-- 侧边导航: <ul class="layui-nav layui-nav-tree layui-nav-side"> -->
+          <li class="layui-nav-item layui-nav-itemed firstMenu">
+            <a href="javascript:;"><img src="images/logo1.png" alt="">首  页<i class="layui-icon layui-icon-down"></i></a>
+            <dl class="layui-nav-child" style="background-color: none;">
+              <dd><a href="javascript:;">填写认证申请书</a></dd>
+              <dd><a href="javascript:;">我的申请草稿</a></dd>
+            </dl>
+          </li>
+          <li class="layui-nav-item firstMenu"><a href="javascript:;"><img src="images/logo2.png" alt="">认证申请<i class="layui-icon layui-icon-down"></i></a></li>
+          <li class="layui-nav-item firstMenu"><a href="javascript:;"><img src="images/logo3.png" alt="">证书列表<i class="layui-icon layui-icon-down"></i></a></li>
+          <li class="layui-nav-item firstMenu"><a href="javascript:;"><img src="images/logo4.png" alt="">标志管理<i class="layui-icon layui-icon-down"></i></a></li>
+          <li class="layui-nav-item firstMenu"><a href="javascript:;"><img src="images/logo5.png" alt="">合格证管理2.0<i class="layui-icon layui-icon-down"></i></a></li>
+          <li class="layui-nav-item firstMenu"><a href="javascript:;"><img src="images/logo6.png" alt="">统计报表<i class="layui-icon layui-icon-down"></i></a></li>
+          <li class="layui-nav-item firstMenu"><a href="javascript:;"><img src="images/logo7.png" alt="">合格证管理1.0<i class="layui-icon layui-icon-down"></i></a></li>
+          <li class="layui-nav-item firstMenu"><a href="javascript:;"><img src="images/logo8.png" alt="">企业信息<i class="layui-icon layui-icon-down"></i></a></li>
+          <li class="layui-nav-item firstMenu"><a href="javascript:;"><img src="images/logo9.png" alt="">缴费情况<i class="layui-icon layui-icon-down"></i></a></li>
+          <li class="layui-nav-item firstMenu"><a href="javascript:;"><img src="images/logo10.png" alt="">系统设置<i class="layui-icon layui-icon-down"></i></a></li>
+        </ul>
+      <!-- <ul class="layui-nav layui-nav-tree leftNav mynavbar"  lay-filter="test">
+        <li class="layui-nav-item layui-nav-itemed yijfi ">
           <a href="javascript:;" data-id="index" data-url="apply" data-header="我的申请_系统首页"><img src="images/menu1.png" alt="">系统首页</a>
           <dl class="layui-nav-child">
           </dl>
@@ -43,59 +64,15 @@
           <a class="" href="javascript:;"><img src="images/menu2.png" alt="">我的申请</a>
           <dl class="layui-nav-child">
             <dd class="erji"><a href="javascript:;" data-id="apply" data-url="index" data-header="首页_填写WSCT认证申请书">填写认证申请书</a></dd>
-            <dd class="erji"><a href="javascript:;">我的申请草稿</a></dd>
             <dd class="erji"><a href="javascript:;" data-id="audit" data-url="index" data-header="首页_待审核申请">待审核申请</a></dd>
-            <dd class="erji"><a href="javascript:;">待支付预付款申请</a></dd>
-            <dd class="erji"><a href="javascript:;">型试试验中</a></dd>
-            <dd class="erji"><a href="javascript:;">工厂检查中</a></dd>
-            <dd class="erji"><a href="javascript:;">合格评定中</a></dd>
-            <dd class="erji"><a href="javascript:;">待支付尾款申请</a></dd>
-            <dd class="erji"><a href="javascript:;">证书签发</a></dd>
-            <dd class="erji"><a href="javascript:;">认证完成</a></dd>
-            <dd class="erji"><a href="javascript:;">退回的申请</a></dd>
-            <dd class="erji"><a href="javascript:;">异常的申请</a></dd>
-            <dd class="erji"><a href="javascript:;">填写认证申请书</a></dd>
-            <dd class="erji"><a href="javascript:;">不受理的申请</a></dd>
-            <dd class="erji"><a href="javascript:;">已删除的申请</a></dd>
           </dl>
         </li>
-        <li class="layui-nav-item layui-nav-itemed yiji">
-          <a class="" href="javascript:;"><img src="images/menu3.png" alt="">费用记录</a>
-          <dl class="layui-nav-child">
-          </dl>
-        </li>
-        <li class="layui-nav-item layui-nav-itemed yiji">
-          <a class="" href="javascript:;"><img src="images/menu4.png" alt="">证书管理</a>
-          <dl class="layui-nav-child">
-          </dl>
-        </li>
-        <li class="layui-nav-item layui-nav-itemed yiji">
-          <a class="" href="javascript:;"><img src="images/menu5.png" alt="">认证信息</a>
-          <dl class="layui-nav-child">
-          </dl>
-        </li>
-        <li class="layui-nav-item layui-nav-itemed yiji">
-          <a class="" href="javascript:;"><img src="images/menu6.png" alt="">标志申请</a>
-          <dl class="layui-nav-child">
-          </dl>
-        </li>
-        <li class="layui-nav-item layui-nav-itemed yiji">
-          <a class="" href="javascript:;"><img src="images/menu7.png" alt="">个人设置</a>
-          <dl class="layui-nav-child">
-          </dl>
-        </li>
-        <li class="layui-nav-item layui-nav-itemed yiji">
-          <a class="" href="javascript:;"><img src="images/menu8.png" alt="">通知中心</a>
-          <dl class="layui-nav-child">
-          </dl>
-        </li>
-      </ul>
+      </ul> -->
     </div>
   </div>
   
   <div class="layui-body">
     <!-- 内容主体区域 -->
-    <div class="content_header"><span class="firstMenu">我的申请</span><span class="icon">></span><span class="secondMenu">系统首页</span></div>
     <!-- 系统首页 -->
     <div class="system page" id="index" data-header="我的申请_系统首页" data-url="apply">
       <h3>您好！欢迎使用WSCT供应链平台</h3>
