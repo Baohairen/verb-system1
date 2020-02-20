@@ -88,9 +88,9 @@ $('#prev').click(function(){
   $('.step1').show();
 })
 var clickNum = '';
-$('.mynavbar .yiji>a').click(function(){
-  $('.mynavbar .yiji>a').removeClass('active');
-  var imgList = $('.mynavbar .yiji>a img');
+$('.firstMenu>a').click(function(){
+  $('.firstMenu>a').removeClass('active');
+  var imgList = $('.firstMenu>a img');
   for(var i=0;i<imgList.length;i++){
     var oldSrc = $(imgList[i]).attr('src');
     oldSrc = oldSrc.replace('_active.png','.png');
@@ -103,7 +103,7 @@ $('.mynavbar .yiji>a').click(function(){
   src = src.replace('.png','_active.png');
   $(this).find('img').attr('src',src);
 })
-$('.mynavbar .yiji>a').mouseover(function(){
+$('.firstMenu>a').mouseover(function(){
   var src = $(this).find('img').attr('src');
   if(src.indexOf('active')>0){
     return
@@ -112,7 +112,7 @@ $('.mynavbar .yiji>a').mouseover(function(){
   src = src.replace('.png','_active.png');
   $(this).find('img').attr('src',src);
 })
-$('.mynavbar .yiji>a').mouseout(function(){
+$('.firstMenu>a').mouseout(function(){
   var src = $(this).find('img').attr('src');
   src = src.replace('_active.png','.png');
   // console.log(src.substr(src.indexOf('.')-1,1),clickNum)

@@ -16,13 +16,12 @@ body,html{
 }
 /* 修改end */
 .layui-header{
-    height: 58px!important;
-    background: rgba(9,167,236,1)!important;
-    border-bottom: 2px solid rgba(237,157,72,1);
+    height: 68px!important;
+    background: url('../images/titleBg.png') no-repeat;
+    background-size:100% 100%;
 }
 .layui-logo{
     width: 27%!important;
-    background: #fff;
     text-align: left!important;
     padding-left: 1%;
 }
@@ -37,10 +36,25 @@ body,html{
     right: 0;
 }
 .myheader .layui-nav-bar{
-    background: rgba(237,157,72,1);
+    background: #fff;
+}
+.myheader .layui-nav-item{
+    line-height: 68px;
 }
 .myheader .layui-nav-item a{
-    padding:0 10px;
+    padding:0 30px;
+    font-size:13px;
+}
+.layui-layout-right{
+    top:2px;
+}
+.layui-layout-right .layui-nav-item a{
+    line-height: 20px;
+    font-size: 12px;
+    color: #D0E3F9;
+}
+.layui-layout-right .layui-nav-bar,.layui-layout-right .layui-nav-item:after{
+    display: none;
 }
 .mynavbar .layui-nav-bar{
     width: 0;
@@ -51,13 +65,18 @@ body,html{
 }
 .layui-logo img{
     width: 75%;
+    position: relative;
+    top: 5px;
+}
+.layui-nav .layui-this:after{
+    background: #fff;
 }
 /* 修改start */
 ul li a{
-    font-size:14px!important;
+    font-size:14px;
     font-family:MicrosoftYaHei;
     font-weight:400;
-    color:rgba(255,255,255,1)!important;
+    color:rgba(255,255,255,1);
 }
 .layui-layout-left {
     left: 26%!important;
@@ -90,7 +109,7 @@ ul li a{
     font-size:7px;
     font-family:MicrosoftYaHei;
     font-weight:400;
-    color:rgba(23,26,30,1)!important;
+    color:rgba(23,26,30,1);
 }
 .layui-nav-tree li a img{
     width: 15px;
