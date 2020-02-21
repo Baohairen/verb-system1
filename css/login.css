@@ -51,8 +51,6 @@ body,html{
     /* box-sizing: border-box; */
 }
 .login .main .main_main{
-    width: 350px;
-    height: 330px;
     margin: 0 auto;
     background:rgba(255,255,255,1);
     box-shadow:0px 4px 12px 0px rgba(23,55,67,0.24);
@@ -60,17 +58,56 @@ body,html{
     text-align: center;
     padding: 2% 4%;
     box-sizing: border-box;
+    
+}
+.login .main #main_main1{
+    width: 350px;
+    height: 330px;
     position: absolute;
-    top: 30%;
+    top: 20%;
     right: 10%;
 }
-.login .main .main_main p{
+.login .main #main_main2{
+    height: 375px;
+    position: absolute;
+    top: 20%;
+    right: 10%;
+}
+.login .main #main_main3{
+    width: 74%;
+    height: 76%;
+    position: absolute;
+    top: 10%;
+    right: 13%;
+}
+.login .main #main_main2,#main_main3{
+    display: none;
     text-align: left;
+}
+.login .main .main_main p{
     height:21px;
-    font-size:14px;
+    font-size:16px;
     font-family:MicrosoftYaHei;
     font-weight:400;
     color:rgba(0,0,0,1);
+}
+.p1{
+    text-align: left;
+}
+.p2{
+    display: inline-block;
+    width: 39%;
+}
+.p3{
+    display: inline-block;
+    width: 75%;
+}
+.toLogin{
+    font-size:12px;
+    font-family:MicrosoftYaHei;
+    font-weight:400;
+    color:rgba(47,135,245,1);
+    line-height:4px;
 }
 .login .main .main_main .header{
     width: 85%;
@@ -92,6 +129,7 @@ body,html{
     padding: 0 5%;
     text-align: left;
 }
+
 .login .main .main_main .input_div img{
     width: 15px;
 }
@@ -113,6 +151,19 @@ body,html{
     border: none;
     /* border-left:1px solid rgba(216,214,214,1) ; */
 }
+.getCode{
+    font-size:12px;
+    font-family:MicrosoftYaHei;
+    font-weight:400;
+    color:rgba(47,135,245,1);
+}
+.noMargin{
+    width: 70%!important;
+    margin-left: 0!important;
+}
+.red{
+    color: red;
+}
 .login .main .main_main button{
     margin: 10px 0 20px;
     height:35px;
@@ -126,6 +177,9 @@ body,html{
     background:linear-gradient(-90deg,rgba(50,183,240,1) 0%,rgba(20,94,202,1) 100%);
     box-shadow:0px 4px 9px 0px rgba(0,138,255,0.41);
     border-radius:13px;
+}
+.layui-container {
+    width: 100%!important;
 }
 .layui-row{
     font-family:MicrosoftYaHei;

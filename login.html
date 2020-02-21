@@ -17,8 +17,8 @@
         </div>
       </div>
       <div class="main">
-        <div class="main_main">
-          <p>欢迎使用SMQ认证操作平台</p>
+        <div class="main_main" id="main_main1">
+          <p class="p1">欢迎使用SMQ认证操作平台</p>
           <div class="line1"></div>
           <form action="">
             <div class="input_div input_div1">
@@ -33,10 +33,199 @@
           </form>
           <div class="layui-row">
             <div class="layui-col-md4">
-              <a>企业注册</a>
+              <a onclick="hide('0')">企业注册</a>
             </div>
             <div class="layui-col-md6 layui-col-md-offset2">
-              <a>忘记用户名或密码</a>
+              <a onclick="hide('1')">忘记用户名或密码</a>
+            </div>
+          </div>
+        </div>
+        <div class="main_main" id="main_main2">
+          <p class="p2">忘记密码</p>
+          <a class="toLogin" onclick="hide('2')">用户注册已有账号，前去登录</a>
+          <div class="line1"></div>
+          <form action="">
+            <div class="input_div input_div1">
+              <img id="img1" src="images/username.png" alt="">
+              <input type="text" name="userName" placeholder="请输入用户名称" onfocus="mouseOver('0')" onblur="mouseOut()">
+            </div>
+            <div class="input_div input_div1">
+              <!-- <img id="img1" src="images/username.png" alt=""> -->
+              <input type="text" class="noMargin" name="userName" placeholder="请输入短信验证码" onfocus="mouseOver('0')" onblur="mouseOut()">
+              <a class="getCode">获取验证码</a>
+            </div>
+            <div class="input_div input_div2">
+              <img id="img2" class="" src="images/password.png" alt="">
+              <input type="password" name="password" placeholder="请输入6至20登录密码" onfocus="mouseOver('1')" onblur="mouseOut()">
+            </div>
+            <div class="input_div input_div2">
+              <img id="img2" class="" src="images/password.png" alt="">
+              <input type="password" name="password" placeholder="请再次输入登录密码" onfocus="mouseOver('1')" onblur="mouseOut()">
+            </div>
+            <button type="button" class="layui-btn layui-btn-fluid layui-btn-radius layui-btn-primary"  onclick="hide('2')">确&nbsp;&nbsp;认</button>
+          </form>
+          <!-- <div class="layui-row">
+            <div class="layui-col-md4">
+              <a onclick="hide('0')">企业注册</a>
+            </div>
+            <div class="layui-col-md6 layui-col-md-offset2">
+              <a onclick="hide('1')">忘记用户名或密码</a>
+            </div>
+          </div> -->
+        </div>
+        <div class="main_main" id="main_main3">
+          <p class="p3">用户注册</p>
+          <a class="toLogin" onclick="hide('2')">用户注册已有账号，前去登录</a>
+          <div class="line1"></div>
+          <div class="layui-container">  
+            <div class="layui-row">
+              <div class="layui-col-md6">
+                <div class="layui-form-item">
+                  <label class="layui-form-label"><span class="red">*</span>用户名</label>
+                  <div class="layui-input-block">
+                    <input type="text" name="title" required  lay-verify="required" placeholder="纯字母或者字母+数字" autocomplete="off" class="layui-input">
+                  </div>
+                </div>
+              </div>
+              <div class="layui-col-md6">
+                <div class="layui-form-item">
+                  <label class="layui-form-label"><span class="red">*</span>密码</label>
+                  <div class="layui-input-block">
+                    <input type="password" name="password" required lay-verify="required" placeholder="数字+字母不得少于6位" autocomplete="off" class="layui-input">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="layui-row">
+              <div class="layui-col-md6">
+                <div class="layui-form-item">
+                  <label class="layui-form-label"><span class="red">*</span>确认密码</label>
+                  <div class="layui-input-block">
+                    <input type="password" name="password" required lay-verify="required" placeholder="数字+字母不得少于6位" autocomplete="off" class="layui-input">
+                  </div>
+                </div>
+              </div>
+              <div class="layui-col-md6">
+                <div class="layui-form-item">
+                  <label class="layui-form-label"><span class="red">*</span>所在行政区划</label>
+                  <div class="layui-input-block">
+                    <input type="password" name="password" required lay-verify="required" placeholder="请输入密码" autocomplete="off" class="layui-input">
+                  </div>
+                </div>
+              </div>
+            </div>  
+            <div class="layui-row">
+              <div class="layui-col-md6">
+                <div class="layui-form-item">
+                  <label class="layui-form-label"><span class="red">*</span>您的身份</label>
+                  <div class="layui-input-block">
+                    <input type="checkbox" name="" title="委托人" lay-skin="primary" checked>
+                    <input type="checkbox" name="" title="制造商" lay-skin="primary" >
+                    <input type="checkbox" name="" title="生产厂" lay-skin="primary" >
+                    <input type="checkbox" name="" title="代理机构" lay-skin="primary" >
+                    <i class="layui-icon layui-icon-tips"></i>
+                  </div>
+                  <div class="layui-form-mid layui-word-aux"></div>
+                </div>
+              </div>
+              <div class="layui-col-md6">
+                <div class="layui-form-item">
+                  <label class="layui-form-label"><span class="red">*</span>企业名称</label>
+                  <div class="layui-input-block">
+                    <input type="text" name="title" required  lay-verify="required" placeholder="请输入..." autocomplete="off" class="layui-input">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="layui-row">
+              <div class="layui-col-md6">
+                <div class="layui-form-item">
+                  <label class="layui-form-label"><span class="red">*</span>企业地址</label>
+                  <div class="layui-input-block">
+                    <input type="text" name="title" required  lay-verify="required" placeholder="请输入..." autocomplete="off" class="layui-input">
+                  </div>
+                </div>
+              </div>
+              <div class="layui-col-md6">
+                <div class="layui-form-item">
+                  <label class="layui-form-label"><span class="red">*</span>社会统一信用代码</label>
+                  <div class="layui-input-block">
+                    <input type="text" name="title" required  lay-verify="required" placeholder="请输入..." autocomplete="off" class="layui-input">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="layui-row">
+              <div class="layui-col-md6">
+                <div class="layui-form-item">
+                  <label class="layui-form-label"><span class="red">*</span>法人代表名称</label>
+                  <div class="layui-input-block">
+                    <input type="text" name="title" required  lay-verify="required" placeholder="请输入..." autocomplete="off" class="layui-input">
+                  </div>
+                </div>
+              </div>
+              <div class="layui-col-md6">
+                <div class="layui-form-item">
+                  <label class="layui-form-label"><span class="red">*</span>联系人</label>
+                  <div class="layui-input-block">
+                    <input type="text" name="title" required  lay-verify="required" placeholder="请输入..." autocomplete="off" class="layui-input">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="layui-row">
+              <div class="layui-col-md6">
+                <div class="layui-form-item">
+                  <label class="layui-form-label"><span class="red">*</span>联系人职务</label>
+                  <div class="layui-input-block">
+                    <input type="text" name="title" required  lay-verify="required" placeholder="请输入..." autocomplete="off" class="layui-input">
+                  </div>
+                </div>
+              </div>
+              <div class="layui-col-md6">
+                <div class="layui-form-item">
+                  <label class="layui-form-label"><span class="red">*</span>联系人身份证号码</label>
+                  <div class="layui-input-block">
+                    <input type="text" name="title" required  lay-verify="required" placeholder="请输入..." autocomplete="off" class="layui-input">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="layui-row">
+              <div class="layui-col-md6">
+                <div class="layui-form-item">
+                  <label class="layui-form-label"><span class="red">*</span>联系人手机号码</label>
+                  <div class="layui-input-block">
+                    <input type="text" name="title" required  lay-verify="required" placeholder="请输入..." autocomplete="off" class="layui-input">
+                  </div>
+                </div>
+              </div>
+              <div class="layui-col-md6">
+                <div class="layui-form-item">
+                  <label class="layui-form-label"><span class="red">*</span>座机</label>
+                  <div class="layui-input-block">
+                    <input type="text" name="title" required  lay-verify="required" placeholder="请输入..." autocomplete="off" class="layui-input">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="layui-row">
+              <div class="layui-col-md6">
+                <div class="layui-form-item">
+                  <label class="layui-form-label"><span class="red">*</span>邮箱</label>
+                  <div class="layui-input-block">
+                    <input type="text" name="title" required  lay-verify="required" placeholder="请输入..." autocomplete="off" class="layui-input">
+                  </div>
+                </div>
+              </div>
+              <div class="layui-col-md6">
+                <div class="layui-form-item">
+                  <label class="layui-form-label"><span class="red">*</span>上传营业执照</label>
+                  <div class="layui-input-block">
+                    <input type="text" name="title" required  lay-verify="required" placeholder="请输入标题" autocomplete="off" class="layui-input">
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -57,6 +246,23 @@ layui.use('element', function(){
   
   
 });
+function hide(id){
+  if(id == '0'){
+    document.getElementById('main_main1').style.display='none';
+    document.getElementById('main_main2').style.display='none';
+    document.getElementById('main_main3').style.display='block';
+  }
+  else if(id == '1'){
+    document.getElementById('main_main1').style.display='none';
+    document.getElementById('main_main2').style.display='block';
+    document.getElementById('main_main3').style.display='none';
+  }
+  else{
+    document.getElementById('main_main1').style.display='block';
+    document.getElementById('main_main2').style.display='none';
+    document.getElementById('main_main3').style.display='none';
+  }
+}
 function mouseOver(id){
   if(id== '0'){
     document.getElementById('img1').setAttribute("src","images/user_active.png")
