@@ -68,6 +68,7 @@ body,html{
     right: 10%;
 }
 .login .main #main_main2{
+    width: 375px;
     height: 375px;
     position: absolute;
     top: 20%;
@@ -75,14 +76,122 @@ body,html{
 }
 .login .main #main_main3{
     width: 74%;
-    height: 76%;
+    height: 85%;
     position: absolute;
-    top: 10%;
+    top: 5%;
     right: 13%;
+    padding: 1% 4%!important;
 }
 .login .main #main_main2,#main_main3{
     display: none;
     text-align: left;
+}
+.login .main #main_main3 .layui-container{
+    font-size: 12px;
+}
+.login .main #main_main3 .layui-col-md6 {
+    height: 30px;
+    margin-bottom: 10px;
+}
+.login .main #main_main3 .layui-col-md6 .layui-form-label {
+    padding: 9px 0px;
+    width: 105px;
+}
+.login .main #main_main3 .layui-col-md6 .layui-input-block {
+    min-height: 30px;
+}
+.login .main #main_main3 .layui-col-md6 input{
+    height: 30px;
+    
+}
+.login .main #main_main3 .layui-col-md6 input.layui-input{
+    width: 86%;
+}
+.login .main #main_main3 .layui-col-md6 .layui-form-radio {
+    line-height: 30px;
+    margin: 0;
+}
+.login .main #main_main3 .layui-col-md6 .layui-form-radio>i {
+    font-size: 14px;
+    margin-right: 5px;
+}
+.login .main #main_main3 .layui-col-md6 .layui-form-radio * {
+    font-size: 12px;
+}
+.login .main #main_main3 .layui-col-md6 .layui-icon-tips{
+    font-size: 12px;
+}
+.login .main #main_main3 .layui-col-md6 .layui-form-label{
+    line-height: 12px;
+}
+.login .main #main_main3 .layui-col-md6 .layui-form-select{
+    width: 28%;
+    display: inline-block;
+}
+.uploadDiv{
+    display: flex;
+}
+.borderDiv{
+    width: 80px;
+    height: 80px;
+    border: 1px solid #ccc;
+    display: inline-block;
+    margin-right: 20px;
+}
+.borderDiv .layui-btn{
+    height: 80px!important;
+    width: 80px!important;
+    border: none!important;
+    text-align: center!important;
+    background: none!important;
+    color: #000!important;
+    margin: 0!important;
+    padding: 0!important;
+}
+.tipText{
+    width: 60%;
+    display: inline-block;
+}
+.tipText p,.tipText ul{
+    font-size: 12px!important;
+    color: #999!important;
+}
+.btn{
+    text-align: center;
+    margin-top: 8%;
+}
+.btn button{
+    width: 140px;
+    font-weight: bold;
+}
+.btn .reset{
+    background:rgba(234,237,244,1);
+    color: #000;
+}
+.btn .register{
+    color: #fff;
+    background:linear-gradient(-90deg,rgba(50,183,240,1) 0%,rgba(20,94,202,1) 100%);
+    box-shadow:0px 4px 9px 0px rgba(0,138,255,0.41);
+    /* border-radius:13px; */
+}
+.tipsDiv{
+    position: relative;
+}
+.tips{
+    position: absolute;
+    top: 0;
+    right: -45px;
+    color: #999;
+    font-size: 12px;
+    width: 70px;
+    padding: 0!important;
+    line-height: 15px!important;
+}
+.login .main #main_main3 .layui-col-md6 .layui-form-select input.layui-input {
+    width: 100%;
+}
+.login .main #main_main3 .layui-col-md6 .layui-form-select .layui-edge {
+    /* right: 35px; */
 }
 .login .main .main_main p{
     height:21px;
@@ -100,7 +209,8 @@ body,html{
 }
 .p3{
     display: inline-block;
-    width: 75%;
+    width: 70%;
+    padding-left: 5%;
 }
 .toLogin{
     font-size:12px;
@@ -164,7 +274,7 @@ body,html{
 .red{
     color: red;
 }
-.login .main .main_main button{
+.login .main #main_main1 button,.login .main #main_main2 button{
     margin: 10px 0 20px;
     height:35px;
     line-height: 35px;
