@@ -35,153 +35,133 @@
   <div class="layui-side">
     <div class="layui-side-scroll">
       <!-- 左侧导航区域（可配合layui已有的垂直导航） -->
-      <ul class="layui-nav layui-nav-tree" lay-filter="test">
+      <ul class="layui-nav layui-nav-tree leftNav" lay-filter="test">
         <!-- 侧边导航: <ul class="layui-nav layui-nav-tree layui-nav-side"> -->
           <li class="layui-nav-item layui-nav-itemed firstMenu">
-            <a href="javascript:;"><img src="images/logo1.png" alt="">首  页<i class="layui-icon layui-icon-down"></i></a>
+            <a href="javascript:;" data-id="index" data-header=""><img src="images/logo1.png" alt="">首  页<i class="layui-icon layui-icon-down"></i></a>
+          </li>
+          <li class="layui-nav-item firstMenu">
+            <a href="javascript:;"><img src="images/logo2.png" alt="">认证申请<i class="layui-icon layui-icon-down"></i></a>
             <dl class="layui-nav-child" style="background-color: none;">
-              <dd><a href="javascript:;">填写认证申请书</a></dd>
-              <dd><a href="javascript:;">我的申请草稿</a></dd>
+              <dd><a href="javascript:;" data-id="apply" data-header="认证申请_填写认证申请">填写认证申请书</a></dd>
+              <dd><a href="javascript:;" data-id="cers" data-header="合格证管理_填写认证申请">合格证申请书</a></dd>
+              <dd><a href="javascript:;" data-id="audit" data-header="我的申请_待审核的申请">待审核申请</a></dd>
+              <dd><a href="javascript:;" data-id="payDetail" data-header="一级菜单_支付款项">支付款项</a></dd>
             </dl>
           </li>
-          <li class="layui-nav-item firstMenu"><a href="javascript:;"><img src="images/logo2.png" alt="">认证申请<i class="layui-icon layui-icon-down"></i></a></li>
           <li class="layui-nav-item firstMenu"><a href="javascript:;"><img src="images/logo3.png" alt="">证书列表<i class="layui-icon layui-icon-down"></i></a></li>
           <li class="layui-nav-item firstMenu"><a href="javascript:;"><img src="images/logo4.png" alt="">标志管理<i class="layui-icon layui-icon-down"></i></a></li>
-          <li class="layui-nav-item firstMenu"><a href="javascript:;"><img src="images/logo5.png" alt="">合格证管理2.0<i class="layui-icon layui-icon-down"></i></a></li>
+          <li class="layui-nav-item firstMenu">
+            <a href="javascript:;"><img src="images/logo5.png" alt="">合格证管理2.0<i class="layui-icon layui-icon-down"></i></a>
+          </li>
           <li class="layui-nav-item firstMenu"><a href="javascript:;"><img src="images/logo6.png" alt="">统计报表<i class="layui-icon layui-icon-down"></i></a></li>
           <li class="layui-nav-item firstMenu"><a href="javascript:;"><img src="images/logo7.png" alt="">合格证管理1.0<i class="layui-icon layui-icon-down"></i></a></li>
           <li class="layui-nav-item firstMenu"><a href="javascript:;"><img src="images/logo8.png" alt="">企业信息<i class="layui-icon layui-icon-down"></i></a></li>
           <li class="layui-nav-item firstMenu"><a href="javascript:;"><img src="images/logo9.png" alt="">缴费情况<i class="layui-icon layui-icon-down"></i></a></li>
           <li class="layui-nav-item firstMenu"><a href="javascript:;"><img src="images/logo10.png" alt="">系统设置<i class="layui-icon layui-icon-down"></i></a></li>
         </ul>
-      <!-- <ul class="layui-nav layui-nav-tree leftNav mynavbar"  lay-filter="test">
-        <li class="layui-nav-item layui-nav-itemed yijfi ">
-          <a href="javascript:;" data-id="index" data-url="apply" data-header="我的申请_系统首页"><img src="images/menu1.png" alt="">系统首页</a>
-          <dl class="layui-nav-child">
-          </dl>
-        </li>
-        <li class="layui-nav-item layui-nav-itemed yiji">
-          <a class="" href="javascript:;"><img src="images/menu2.png" alt="">我的申请</a>
-          <dl class="layui-nav-child">
-            <dd class="erji"><a href="javascript:;" data-id="apply" data-url="index" data-header="首页_填写WSCT认证申请书">填写认证申请书</a></dd>
-            <dd class="erji"><a href="javascript:;" data-id="audit" data-url="index" data-header="首页_待审核申请">待审核申请</a></dd>
-          </dl>
-        </li>
-      </ul> -->
     </div>
   </div>
-  
+  <div class="menus">您的位置：<span class="menu_title1"></span>><span class="menu_title2"></span></div>
   <div class="layui-body">
     <!-- 内容主体区域 -->
     <!-- 系统首页 -->
     <div class="system page" id="index" data-header="我的申请_系统首页" data-url="apply">
-      <h3>您好！欢迎使用WSCT供应链平台</h3>
-      <div class="left_div">
-        <p>深圳世标检测认证股份有限公司（World Standardization Certification & Testing Group （Shenzhen） Co., LTD），为众多行业和产品提供通行全球解决方案的一站式全领域公共检测、鉴定、验货及认证服务平台，帮助企业应对全球各种技术贸易壁垒，提升企业竞争优势，满足其对品质的高标准要求。</p>
-        <p>如需了解认证业务</p>
-        <p>1、可联系认证中心，电话（Tel）：0086-0755-26996143/4/5    0086-075526996192（Line）；邮箱（Email）：Fengbing.Wang@wsct-cert.com  ；联系地址：广东省深圳市宝安区宝石路（应人石路口）宝石科技园A-B栋 </p>
-        <p class="third_p">2、如有操作系统出现任何问题，可以随时联系 0755-26996192 。</p>
+      <h3>您好！欢迎使用SMQ认证操作平台。</h3>
+      <div class="left_div mb30">
+        <p>深圳市计量质量检测研究院（简称：SMQ）是深圳市人民政府设立并经国家市场监督管理总局、广东省质量技术监督局授权的法定计量检定和产品质量检验机构，为广大企业提供仪器设备检定校准、产品测试、产品认证、供应链品质保证检测和技术咨询与培训等技术服务。</p>
       </div>  
       <div class="right_div">
         <img src="images/scanQRcode.png" alt="">
-        <div>微信扫一扫关注WSCT微信公众号可随时查看申请办理进度、证书等信息!</div>
+        <div>扫一扫，知天下</div>
       </div> 
       <div class="layui-row">
         <div class="layui-col-md6 part part1 marginbottom15">
           <div class="part_header">
             <div>
-              <img src="images/menu9.png" alt="">
-              <span>系统通知</span>
+              <img src="images/img1.png" alt="">
+              <span>通知公告</span>
             </div>
-            <a href="">更多MORE &nbsp;&nbsp;>></a>
           </div>
           <ul>
-            <li><div class="dotted"></div>wsct发出寄送发票通知[乐冠 更改报告内容][2019-09-17]</li>
-            <li><div class="dotted"></div>wsct发出费用结算收费通知[乐冠 更改报告内容][2019-09-06]</li>
-            <li><div class="dotted"></div>wsct发出资料审查表[乐冠 更改报告内容]（符合）[2019-09-06]</li>
-            <li><div class="dotted"></div>wsct发出资料审查表[乐冠 更改报告内容]（不符合）[2019-09-04]</li>
-            <li style="border:none"><div class="dotted"></div>wsct发出资料审查表[乐冠 更改报告内容]（不符合）[2019-09-04]</li>
+            <li><div class="dotted"></div>推行绿色产品认证 引领产业绿色发展 ——我院举办绿色产品认证宣贯会</li>
+            <li><div class="dotted"></div>推行绿色产品认证 引领产业绿色发展 ——我院举办绿色产品认证宣贯会</li>
+            <li><div class="dotted"></div>推行绿色产品认证 引领产业绿色发展 ——我院举办绿色产品认证宣贯会</li>
+            <li><div class="dotted"></div>推行绿色产品认证 引领产业绿色发展 ——我院举办绿色产品认证宣贯会</li>
+            <li style="border:none"><div class="dotted"></div>推行绿色产品认证 引领产业绿色发展 ——我院举办绿色产品认证宣贯会</li>
           </ul>
         </div>
         <div class="layui-col-md6 part">
           <div class="part_header">
             <div>
-              <img src="images/menu10.png" alt="">
-              <span>WSTC公告</span>
+              <img src="images/img2.png" alt="">
+              <span>系统消息</span>
             </div>
-            <a href="">更多MORE &nbsp;&nbsp;>></a>
           </div>
           <ul>
-            <li><div class="dotted"></div>wsct发出寄送发票通知[乐冠 更改报告内容][2019-09-17]</li>
-            <li><div class="dotted"></div>wsct发出费用结算收费通知[乐冠 更改报告内容][2019-09-06]</li>
-            <li><div class="dotted"></div>wsct发出资料审查表[乐冠 更改报告内容]（符合）[2019-09-06]</li>
-            <li><div class="dotted"></div>wsct发出资料审查表[乐冠 更改报告内容]（不符合）[2019-09-04]</li>
-            <li style="border:none"><div class="dotted"></div>wsct发出资料审查表[乐冠 更改报告内容]（不符合）[2019-09-04]</li>
+            <li><div class="dotted"></div>缴费消息1</li>
+            <li><div class="dotted"></div>缴费消息2</li>
+            <li><div class="dotted"></div>缴费消息3</li>
+            <li><div class="dotted"></div>缴费消息4</li>
+            <li style="border:none"><div class="dotted"></div>缴费消息5</li>
           </ul>
         </div>
-        
-    </div>
-    <div class="layui-row">
+      </div>
+      <div class="layui-row">
         <div class="layui-col-md6 part part1">
             <div class="part_header">
               <div>
-                <img src="images/menu11.png" alt="">
+                <img src="images/img3.png" alt="">
                 <span>我的申请</span>
               </div>
             </div>
             <div class="layui-row list_row">
-              <div class="layui-col-md4 list_div">
+              <div class="layui-col-md6 list_div">
                 <div class="list_div_div">
                   <div class="dotted"></div>
                   申请草稿<span class="red">0</span>笔
                 </div>
               </div>
-              <div class="layui-col-md4 list_div">
+              <div class="layui-col-md6 list_div">
                 <div class="list_div_div">
                   <div class="dotted"></div>
-                  认证结束<span class="red">0</span>笔
+                  需修改或补充信息的申请<span class="red">0</span>笔
                 </div>
               </div>
-              <div class="layui-col-md4 list_div">
-                <div class="list_div_div">
-                  <div class="dotted"></div>
-                  实验室实验<span class="red">0</span>笔
-                </div>
-              </div>
-              <div class="layui-col-md4 list_div">
+              <div class="layui-col-md6 list_div">
                 <div class="list_div_div">
                   <div class="dotted"></div>
                   未受理申请<span class="red">0</span>笔
                 </div>
               </div>
-              <div class="layui-col-md4 list_div">
+              <div class="layui-col-md6 list_div">
                 <div class="list_div_div">
                   <div class="dotted"></div>
-                  待支付合同尾款<span class="red">0</span>笔
+                  认证受理<span class="red">0</span>笔
                 </div>
               </div>
-              <div class="layui-col-md4 list_div">
+              <div class="layui-col-md6 list_div">
                 <div class="list_div_div">
                   <div class="dotted"></div>
-                  合格评定申请<span class="red">0</span>笔
+                  试验实验<span class="red">0</span>笔
                 </div>
               </div>
-              <div class="layui-col-md4 list_div">
+              <div class="layui-col-md6 list_div">
                 <div class="list_div_div">
                   <div class="dotted"></div>
                   工厂检查<span class="red">0</span>笔
                 </div>
               </div>
-              <div class="layui-col-md4 list_div">
-                <div class="list_div_div">
+              <div class="layui-col-md6 list_div">
+                <div class="list_div_div noboder">
                   <div class="dotted"></div>
-                  退回的申请<span class="red">0</span>笔
+                  合格评定<span class="red">0</span>笔
                 </div>
               </div>
-              <div class="layui-col-md4 list_div">
-                <div class="list_div_div">
+              <div class="layui-col-md6 list_div">
+                <div class="list_div_div noboder">
                   <div class="dotted"></div>
-                  证书签发中<span class="red">0</span>笔
+                  认证结束<span class="red">0</span>笔
                 </div>
               </div>
             </div>
@@ -189,56 +169,26 @@
           <div class="layui-col-md6 part">
             <div class="part_header">
               <div>
-                <img src="images/menu12.png" alt="">
+                <img src="images/img4.png" alt="">
                 <span>我的证书</span>
               </div>
             </div>
-            <div class="layui-row list_row2">
-              <div class="layui-col-md6 list_div">
-                <div class="list_div_div">
-                  <div class="dotted"></div>
-                  正常状态的证书<span class="red">0</span>笔
-                </div>
-              </div>
-              <div class="layui-col-md6 list_div">
-                <div class="list_div_div">
-                  <div class="dotted"></div>
-                  6个月以内即将到期<span class="red">0</span>笔
-                </div>
-              </div>
-            </div>
-            <div class="layui-row list_row2">
-              <div class="layui-col-md6 list_div">
-                <div class="list_div_div">
-                  <div class="dotted"></div>
-                  暂停状态的证书<span class="red">0</span>笔
-                </div>
-              </div>
-              <div class="layui-col-md6 list_div">
-                <div class="list_div_div">
-                  <div class="dotted"></div>
-                  证书物流信息<span class="red">0</span>笔
-                </div>
-              </div>
-            </div>
-            <div class="layui-row list_row2">
-              <div class="layui-col-md6 list_div">
-                <div class="list_div_div">
-                  <div class="dotted"></div>
-                  注销状态的证书<span class="red">0</span>笔
-                </div>
-              </div>
-            </div>
+            <ul class="cers">
+              <li><div class="dotted"></div>正常状态的证书<span class="red">0</span>笔</li>
+              <li><div class="dotted"></div>暂停状态的证书<span class="red">0</span>笔</li>
+              <li><div class="dotted"></div>6个月内即将到期<span class="red">0</span>笔</li>
+              <!-- <li style="border:none"><div class="dotted"></div>认证结束<span class="red">0</span>笔</li> -->
+            </ul>
           </div>
     </div>
     </div>
     <!-- 填写认证申请书 -->
     <div class="page" id="apply" data-header="首页_填写WSCT认证申请书" data-url="index">
       <div class="stepInfo">
-        <div class="first">1.选择产品类别</div>
-        <div class="second">2.产品认证申请书</div>
-        <div>3.其他信息</div>
-        <div>4.上传附件</div>
+        <div class="step_menu1">1.选择产品类别</div>
+        <div class="step_menu2">2.产品认证申请书</div>
+        <div class="step_menu3">3.其他信息</div>
+        <div class="step_menu4">4.上传附件</div>
       </div>
       <div class="step step1">
         <form class="layui-form" action="">
@@ -318,7 +268,7 @@
           </div>
           <div class="layui-row btns">
             <div class="layui-col-md-offset5 layui-col-md2">
-              <button type="button" style="width: 100%;" class="layui-btn layui-btn-normal size16"  lay-submit lay-filter="nextStep">下一步</button>
+              <button type="button" style="width: 100%;" class="layui-btn layui-btn-normal size16 next">下一步</button>
             </div>
           </div>
         </form>
@@ -326,11 +276,11 @@
       <div class="step step2">
         <form class="layui-form form1" action="">
           <div class="layui-row">
-            <div class="layui-col-md12 title ac bl size18">
+            <div class="layui-col-md12 title ac bl">
               产品认证申请书
             </div>
           </div>
-          <div class="form">
+          <div class="form titleInfo">
             <div class="layui-form-item">
               <label class="layui-form-label">申请的标题：</label>
               <div class="layui-input-block">
@@ -348,26 +298,26 @@
           </div>
           <div class="layui-row">
             <div class="layui-col-md12 title40 al bl br">
-              产品认证组织基本信息
+              组织基本信息
             </div>
           </div>
           <div class="form">
             <div class="layui-form-item">
-              <label class="layui-form-label width160">是否需要英文证书：</label>
+              <label class="layui-form-label">是否需要英文证书：</label>
               <div class="layui-input-block">
-                <input type="radio" name="sex" value="男" title="男" checked="">
-                <input type="radio" name="sex" value="女" title="女">
+                <input type="radio" name="sex" value="是" title="是" checked="">
+                <input type="radio" name="sex" value="否" title="否">
                 <span class="words">当选择需要英文证书时，英文名称需要必填写</span>
               </div>
             </div>
             <div class="layui-form-item">
-              <label class="layui-form-label"><span class="red">*</span>申请单位（中文）：</label>
+              <label class="layui-form-label"><span class="red">*</span>申请人（申请人）：</label>
               <div class="layui-input-block">
                 <input type="text" name="title" lay-verify="title" autocomplete="off" placeholder="" class="layui-input">
               </div>
             </div>
             <div class="layui-form-item">
-              <label class="layui-form-label">申请单位（英文）：</label>
+              <label class="layui-form-label">英文名称：</label>
               <div class="layui-input-block">
                 <input type="text" name="title" lay-verify="title" autocomplete="off" placeholder="" class="layui-input">
               </div>
@@ -391,32 +341,20 @@
               </div>
             </div>
             <div class="layui-form-item">
-              <label class="layui-form-label"><span class="red">*</span>国家或地区：</label>
-              <div class="layui-input-block">
-                <input type="text" name="title" lay-verify="title" autocomplete="off" placeholder="" class="layui-input">
-              </div>
-            </div>
-            <div class="layui-form-item">
-              <label class="layui-form-label"><span class="red">*</span>付款人名称：</label>
-              <div class="layui-input-block">
-                <input type="text" name="title" lay-verify="title" autocomplete="off" placeholder="" class="layui-input">
-              </div>
-            </div>
-            <div class="layui-form-item">
-              <label class="layui-form-label"><span class="red">*</span>付款人地址：</label>
-              <div class="layui-input-block">
-                <input type="text" name="title" lay-verify="title" autocomplete="off" placeholder="" class="layui-input">
-              </div>
-            </div>
-            <div class="layui-form-item">
               <div class="layui-inline">
-                <label class="layui-form-label"><span class="red">*</span>联系人（中文）：</label>
+                <label class="layui-form-label"><span class="red">*</span>法定代表人：</label>
+                <div class="layui-input-block">
+                  <input type="text" name="title" lay-verify="title" autocomplete="off" placeholder="" class="layui-input">
+                </div>
+              </div>
+              <div class="layui-inline noleft">
+                <label class="layui-form-label">手机：</label>
                 <div class="layui-input-inline">
                   <input type="tel" name="phone" lay-verify="required" autocomplete="off" class="layui-input">
                 </div>
               </div>
-              <div class="layui-inline">
-                <label class="layui-form-label">联系人（英文）：</label>
+              <div class="layui-inline noleft">
+                <label class="layui-form-label">E-mail：</label>
                 <div class="layui-input-inline">
                   <input type="text" name="email" lay-verify="email" autocomplete="off" class="layui-input">
                 </div>
@@ -424,13 +362,19 @@
             </div>
             <div class="layui-form-item">
               <div class="layui-inline">
-                <label class="layui-form-label"><span class="red">*</span>电话：</label>
-                <div class="layui-input-inline">
+                <label class="layui-form-label"><span class="red">*</span>联系人：</label>
+                <div class="layui-input-block">
                   <input type="tel" name="phone" lay-verify="required|phone" autocomplete="off" class="layui-input">
                 </div>
               </div>
-              <div class="layui-inline">
-                <label class="layui-form-label">邮政编码：</label>
+              <div class="layui-inline noleft">
+                <label class="layui-form-label">职务：</label>
+                <div class="layui-input-inline">
+                  <input type="text" name="email" lay-verify="email" autocomplete="off" class="layui-input">
+                </div>
+              </div>
+              <div class="layui-inline noleft">
+                <label class="layui-form-label">E-mail：</label>
                 <div class="layui-input-inline">
                   <input type="text" name="email" lay-verify="email" autocomplete="off" class="layui-input">
                 </div>
@@ -438,13 +382,19 @@
             </div>
             <div class="layui-form-item">
               <div class="layui-inline">
-                <label class="layui-form-label"><span class="red">*</span>电子邮箱：</label>
-                <div class="layui-input-inline">
+                <label class="layui-form-label"><span class="red">*</span>手机：</label>
+                <div class="layui-input-block">
                   <input type="tel" name="phone" lay-verify="required|phone" autocomplete="off" class="layui-input">
                 </div>
               </div>
-              <div class="layui-inline">
-                <label class="layui-form-label">手机：</label>
+              <div class="layui-inline noleft">
+                <label class="layui-form-label">电话：</label>
+                <div class="layui-input-inline">
+                  <input type="text" name="email" lay-verify="email" autocomplete="off" class="layui-input">
+                </div>
+              </div>
+              <div class="layui-inline noleft">
+                <label class="layui-form-label">传真：</label>
                 <div class="layui-input-inline">
                   <input type="text" name="email" lay-verify="email" autocomplete="off" class="layui-input">
                 </div>
@@ -453,31 +403,31 @@
           </div>
           <div class="layui-row">
             <div class="layui-col-md12 title40 al bl br">
-              制造商相关信息
-              <button type="button" class="layui-btn layui-btn-normal layui-btn-sm smbtn">同申请人</button>
+              生产者（制造商）
+              <button type="button" class="layui-btn layui-btn-normal layui-btn-sm smbtn">与委托人（申请人）信息相同</button>
             </div>
           </div>
           <div class="form">
             <div class="layui-form-item">
-              <label class="layui-form-label"><span class="red">*</span>制造商名称（中文）：</label>
+              <label class="layui-form-label"><span class="red">*</span>制造商：</label>
               <div class="layui-input-block">
                 <input type="text" name="title" lay-verify="title" autocomplete="off" placeholder="" class="layui-input">
               </div>
             </div>
             <div class="layui-form-item">
-              <label class="layui-form-label">制造商名称（英文）：</label>
+              <label class="layui-form-label">英文名称：</label>
               <div class="layui-input-block">
                 <input type="text" name="title" lay-verify="title" autocomplete="off" placeholder="" class="layui-input">
               </div>
             </div>
             <div class="layui-form-item">
-              <label class="layui-form-label"><span class="red">*</span>制造商地址（中文）：</label>
+              <label class="layui-form-label"><span class="red">*</span>地址：</label>
               <div class="layui-input-block">
                 <input type="text" name="title" lay-verify="title" autocomplete="off" placeholder="" class="layui-input">
               </div>
             </div>
             <div class="layui-form-item">
-              <label class="layui-form-label">制造商地址（英文）：</label>
+              <label class="layui-form-label">英文地址：</label>
               <div class="layui-input-block">
                 <input type="text" name="title" lay-verify="title" autocomplete="off" placeholder="" class="layui-input">
               </div>
@@ -489,20 +439,20 @@
               </div>
             </div>
             <div class="layui-form-item">
-              <label class="layui-form-label"><span class="red">*</span>国家或地区：</label>
-              <div class="layui-input-block">
-                <input type="text" name="title" lay-verify="title" autocomplete="off" placeholder="" class="layui-input">
-              </div>
-            </div>
-            <div class="layui-form-item">
               <div class="layui-inline">
-                <label class="layui-form-label"><span class="red">*</span>联系人（中文）：</label>
+                <label class="layui-form-label"><span class="red">*</span>法定代表人：</label>
+                <div class="layui-input-block">
+                  <input type="text" name="title" lay-verify="title" autocomplete="off" placeholder="" class="layui-input">
+                </div>
+              </div>
+              <div class="layui-inline noleft">
+                <label class="layui-form-label">手机：</label>
                 <div class="layui-input-inline">
                   <input type="tel" name="phone" lay-verify="required" autocomplete="off" class="layui-input">
                 </div>
               </div>
-              <div class="layui-inline">
-                <label class="layui-form-label">联系人（英文）：</label>
+              <div class="layui-inline noleft">
+                <label class="layui-form-label">E-mail：</label>
                 <div class="layui-input-inline">
                   <input type="text" name="email" lay-verify="email" autocomplete="off" class="layui-input">
                 </div>
@@ -510,13 +460,19 @@
             </div>
             <div class="layui-form-item">
               <div class="layui-inline">
-                <label class="layui-form-label"><span class="red">*</span>电话：</label>
-                <div class="layui-input-inline">
+                <label class="layui-form-label"><span class="red">*</span>联系人：</label>
+                <div class="layui-input-block">
                   <input type="tel" name="phone" lay-verify="required|phone" autocomplete="off" class="layui-input">
                 </div>
               </div>
-              <div class="layui-inline">
-                <label class="layui-form-label">邮政编码：</label>
+              <div class="layui-inline noleft">
+                <label class="layui-form-label">职务：</label>
+                <div class="layui-input-inline">
+                  <input type="text" name="email" lay-verify="email" autocomplete="off" class="layui-input">
+                </div>
+              </div>
+              <div class="layui-inline noleft">
+                <label class="layui-form-label">E-mail：</label>
                 <div class="layui-input-inline">
                   <input type="text" name="email" lay-verify="email" autocomplete="off" class="layui-input">
                 </div>
@@ -524,13 +480,19 @@
             </div>
             <div class="layui-form-item">
               <div class="layui-inline">
-                <label class="layui-form-label"><span class="red">*</span>电子邮箱：</label>
-                <div class="layui-input-inline">
+                <label class="layui-form-label"><span class="red">*</span>手机：</label>
+                <div class="layui-input-block">
                   <input type="tel" name="phone" lay-verify="required|phone" autocomplete="off" class="layui-input">
                 </div>
               </div>
-              <div class="layui-inline">
-                <label class="layui-form-label">手机：</label>
+              <div class="layui-inline noleft">
+                <label class="layui-form-label">电话：</label>
+                <div class="layui-input-inline">
+                  <input type="text" name="email" lay-verify="email" autocomplete="off" class="layui-input">
+                </div>
+              </div>
+              <div class="layui-inline noleft">
+                <label class="layui-form-label">传真：</label>
                 <div class="layui-input-inline">
                   <input type="text" name="email" lay-verify="email" autocomplete="off" class="layui-input">
                 </div>
@@ -540,31 +502,31 @@
           <div class="layui-row">
             <div class="layui-col-md12 title40 al">
               生产厂相关信息
-              <button type="button" class="layui-btn layui-btn-normal layui-btn-sm smbtn">同申请人</button>
-              <button type="button" class="layui-btn layui-btn-normal layui-btn-sm smbtn">同制造商</button>
+              <button type="button" class="layui-btn layui-btn-normal layui-btn-sm smbtn">与委托人（申请人）信息相同</button>
+              <button type="button" class="layui-btn layui-btn-normal layui-btn-sm smbtn">与生产者（制造商）信息相同</button>
             </div>
           </div>
           <div class="form">
             <div class="layui-form-item">
-              <label class="layui-form-label"><span class="red">*</span>生产厂名称（中文）：</label>
+              <label class="layui-form-label"><span class="red">*</span>生产企业：</label>
               <div class="layui-input-block">
                 <input type="text" name="title" lay-verify="title" autocomplete="off" placeholder="" class="layui-input">
               </div>
             </div>
             <div class="layui-form-item">
-              <label class="layui-form-label">生产厂名称（英文）：</label>
+              <label class="layui-form-label">英文名称：</label>
               <div class="layui-input-block">
                 <input type="text" name="title" lay-verify="title" autocomplete="off" placeholder="" class="layui-input">
               </div>
             </div>
             <div class="layui-form-item">
-              <label class="layui-form-label"><span class="red">*</span>生产厂地址（中文）：</label>
+              <label class="layui-form-label"><span class="red">*</span>地址（中文）：</label>
               <div class="layui-input-block">
                 <input type="text" name="title" lay-verify="title" autocomplete="off" placeholder="" class="layui-input">
               </div>
             </div>
             <div class="layui-form-item">
-              <label class="layui-form-label">生产厂地址（英文）：</label>
+              <label class="layui-form-label">地址（英文）：</label>
               <div class="layui-input-block">
                 <input type="text" name="title" lay-verify="title" autocomplete="off" placeholder="" class="layui-input">
               </div>
@@ -576,20 +538,26 @@
               </div>
             </div>
             <div class="layui-form-item">
-              <label class="layui-form-label"><span class="red">*</span>国家或地区：</label>
+              <label class="layui-form-label"><span class="red">*</span>工厂规模：</label>
               <div class="layui-input-block">
                 <input type="text" name="title" lay-verify="title" autocomplete="off" placeholder="" class="layui-input">
               </div>
             </div>
             <div class="layui-form-item">
               <div class="layui-inline">
-                <label class="layui-form-label"><span class="red">*</span>联系人（中文）：</label>
+                <label class="layui-form-label"><span class="red">*</span>法定代表人：</label>
+                <div class="layui-input-block">
+                  <input type="text" name="title" lay-verify="title" autocomplete="off" placeholder="" class="layui-input">
+                </div>
+              </div>
+              <div class="layui-inline noleft">
+                <label class="layui-form-label">手机：</label>
                 <div class="layui-input-inline">
                   <input type="tel" name="phone" lay-verify="required" autocomplete="off" class="layui-input">
                 </div>
               </div>
-              <div class="layui-inline">
-                <label class="layui-form-label">联系人（英文）：</label>
+              <div class="layui-inline noleft">
+                <label class="layui-form-label">E-mail：</label>
                 <div class="layui-input-inline">
                   <input type="text" name="email" lay-verify="email" autocomplete="off" class="layui-input">
                 </div>
@@ -597,13 +565,19 @@
             </div>
             <div class="layui-form-item">
               <div class="layui-inline">
-                <label class="layui-form-label"><span class="red">*</span>电话：</label>
-                <div class="layui-input-inline">
+                <label class="layui-form-label"><span class="red">*</span>联系人：</label>
+                <div class="layui-input-block">
                   <input type="tel" name="phone" lay-verify="required|phone" autocomplete="off" class="layui-input">
                 </div>
               </div>
-              <div class="layui-inline">
-                <label class="layui-form-label">邮政编码：</label>
+              <div class="layui-inline noleft">
+                <label class="layui-form-label">职务：</label>
+                <div class="layui-input-inline">
+                  <input type="text" name="email" lay-verify="email" autocomplete="off" class="layui-input">
+                </div>
+              </div>
+              <div class="layui-inline noleft">
+                <label class="layui-form-label">E-mail：</label>
                 <div class="layui-input-inline">
                   <input type="text" name="email" lay-verify="email" autocomplete="off" class="layui-input">
                 </div>
@@ -611,13 +585,19 @@
             </div>
             <div class="layui-form-item">
               <div class="layui-inline">
-                <label class="layui-form-label"><span class="red">*</span>电子邮箱：</label>
-                <div class="layui-input-inline">
+                <label class="layui-form-label"><span class="red">*</span>手机：</label>
+                <div class="layui-input-block">
                   <input type="tel" name="phone" lay-verify="required|phone" autocomplete="off" class="layui-input">
                 </div>
               </div>
-              <div class="layui-inline">
-                <label class="layui-form-label">手机：</label>
+              <div class="layui-inline noleft">
+                <label class="layui-form-label">电话：</label>
+                <div class="layui-input-inline">
+                  <input type="text" name="email" lay-verify="email" autocomplete="off" class="layui-input">
+                </div>
+              </div>
+              <div class="layui-inline noleft">
+                <label class="layui-form-label">传真：</label>
                 <div class="layui-input-inline">
                   <input type="text" name="email" lay-verify="email" autocomplete="off" class="layui-input">
                 </div>
@@ -631,25 +611,32 @@
           </div>
           <div class="form">
             <div class="layui-form-item">
-              <label class="layui-form-label"><span class="red">*</span>代理机构名称（中文）：</label>
+              <label class="layui-form-label"><span class="red">*</span>是否需要有代理机构：</label>
+              <div class="layui-input-block">
+                <input type="radio" name="test" value="是" title="是" checked="">
+                <input type="radio" name="test" value="否" title="否">
+              </div>
+            </div>
+            <div class="layui-form-item">
+              <label class="layui-form-label"><span class="red">*</span>代理机构信息：</label>
               <div class="layui-input-block">
                 <input type="text" name="title" lay-verify="title" autocomplete="off" placeholder="" class="layui-input">
               </div>
             </div>
             <div class="layui-form-item">
-              <label class="layui-form-label">代理机构名称（英文）：</label>
+              <label class="layui-form-label">英文名称：</label>
               <div class="layui-input-block">
                 <input type="text" name="title" lay-verify="title" autocomplete="off" placeholder="" class="layui-input">
               </div>
             </div>
             <div class="layui-form-item">
-              <label class="layui-form-label"><span class="red">*</span>代理机构地址（中文）：</label>
+              <label class="layui-form-label"><span class="red">*</span>地址（中文）：</label>
               <div class="layui-input-block">
                 <input type="text" name="title" lay-verify="title" autocomplete="off" placeholder="" class="layui-input">
               </div>
             </div>
             <div class="layui-form-item">
-              <label class="layui-form-label">代理机构地址（英文）：</label>
+              <label class="layui-form-label">地址（英文）：</label>
               <div class="layui-input-block">
                 <input type="text" name="title" lay-verify="title" autocomplete="off" placeholder="" class="layui-input">
               </div>
@@ -661,20 +648,20 @@
               </div>
             </div>
             <div class="layui-form-item">
-              <label class="layui-form-label"><span class="red">*</span>国家或地区：</label>
-              <div class="layui-input-block">
-                <input type="text" name="title" lay-verify="title" autocomplete="off" placeholder="" class="layui-input">
-              </div>
-            </div>
-            <div class="layui-form-item">
               <div class="layui-inline">
-                <label class="layui-form-label"><span class="red">*</span>联系人（中文）：</label>
+                <label class="layui-form-label"><span class="red">*</span>法定代表人：</label>
+                <div class="layui-input-block">
+                  <input type="text" name="title" lay-verify="title" autocomplete="off" placeholder="" class="layui-input">
+                </div>
+              </div>
+              <div class="layui-inline noleft">
+                <label class="layui-form-label">手机：</label>
                 <div class="layui-input-inline">
                   <input type="tel" name="phone" lay-verify="required" autocomplete="off" class="layui-input">
                 </div>
               </div>
-              <div class="layui-inline">
-                <label class="layui-form-label">联系人（英文）：</label>
+              <div class="layui-inline noleft">
+                <label class="layui-form-label">E-mail：</label>
                 <div class="layui-input-inline">
                   <input type="text" name="email" lay-verify="email" autocomplete="off" class="layui-input">
                 </div>
@@ -682,13 +669,19 @@
             </div>
             <div class="layui-form-item">
               <div class="layui-inline">
-                <label class="layui-form-label"><span class="red">*</span>电话：</label>
-                <div class="layui-input-inline">
+                <label class="layui-form-label"><span class="red">*</span>联系人：</label>
+                <div class="layui-input-block">
                   <input type="tel" name="phone" lay-verify="required|phone" autocomplete="off" class="layui-input">
                 </div>
               </div>
-              <div class="layui-inline">
-                <label class="layui-form-label">邮政编码：</label>
+              <div class="layui-inline noleft">
+                <label class="layui-form-label">职务：</label>
+                <div class="layui-input-inline">
+                  <input type="text" name="email" lay-verify="email" autocomplete="off" class="layui-input">
+                </div>
+              </div>
+              <div class="layui-inline noleft">
+                <label class="layui-form-label">E-mail：</label>
                 <div class="layui-input-inline">
                   <input type="text" name="email" lay-verify="email" autocomplete="off" class="layui-input">
                 </div>
@@ -696,16 +689,32 @@
             </div>
             <div class="layui-form-item">
               <div class="layui-inline">
-                <label class="layui-form-label"><span class="red">*</span>电子邮箱：</label>
-                <div class="layui-input-inline">
+                <label class="layui-form-label"><span class="red">*</span>手机：</label>
+                <div class="layui-input-block">
                   <input type="tel" name="phone" lay-verify="required|phone" autocomplete="off" class="layui-input">
                 </div>
               </div>
-              <div class="layui-inline">
-                <label class="layui-form-label">手机：</label>
+              <div class="layui-inline noleft">
+                <label class="layui-form-label">电话：</label>
                 <div class="layui-input-inline">
                   <input type="text" name="email" lay-verify="email" autocomplete="off" class="layui-input">
                 </div>
+              </div>
+              <div class="layui-inline noleft">
+                <label class="layui-form-label">传真：</label>
+                <div class="layui-input-inline">
+                  <input type="text" name="email" lay-verify="email" autocomplete="off" class="layui-input">
+                </div>
+              </div>
+            </div>
+            <div class="layui-form-item">
+              <label class="layui-form-label"></label>
+              <div class="layui-input-block">
+                <p class="tips tips1">注：</p>
+                <p class="tips">1、当申请人、制造商、生产厂信息相同时可仅填写一次基本信息；</p>
+                <p class="tips">2、当生产者（制造商）与生产企业不同时，请选择ODM或OEM模式且应提供ODM/OEM协议。</p>
+                <p class="tips">3、当委托人与生产者（制造商）/生产企业不同时，应提供委托人/生产者（制造商）/生产企业之间签定的协议。</p>
+                <p class="tips mb30">4、当选择需要英文证书时，应填写英文信息。</p> 
               </div>
             </div>
           </div>
@@ -734,64 +743,19 @@
               </div>
             </div>
             <div class="layui-form-item">
-              <label class="layui-form-label"><span class="red">*</span>产品型号和规格（中文）：</label>
+              <label class="layui-form-label"><span class="red">*</span>主检型号/规格：</label>
               <div class="layui-input-block">
                 <input type="text" name="title" lay-verify="title" autocomplete="off" placeholder="" class="layui-input">
               </div>
             </div>
             <div class="layui-form-item">
-              <label class="layui-form-label">产品型号和规格（英文）：</label>
+              <label class="layui-form-label">覆盖型号规格：</label>
               <div class="layui-input-block">
-                <input type="text" name="title" lay-verify="title" autocomplete="off" placeholder="" class="layui-input">
-              </div>
-            </div>
-            <div class="layui-form-item">
-              <label class="layui-form-label"><span class="red">*</span>申请认证产品的GB标准号：</label>
-              <div class="layui-input-block">
-                <input type="text" name="title" lay-verify="title" autocomplete="off" placeholder="" class="layui-input">
-              </div>
-            </div>
-            <div class="layui-form-item">
-              <label class="layui-form-label"><span class="red">*</span>EMC标准：</label>
-              <div class="layui-input-block">
-                <input type="text" name="title" lay-verify="title" autocomplete="off" placeholder="" class="layui-input">
-              </div>
-            </div>
-            <div class="layui-form-item">
-              <label class="layui-form-label">申请认证的产品是否有CB测试证书：</label>
-              <div class="layui-input-block">
-                <input type="radio" name="test" value="是" title="是" checked="">
-                <input type="radio" name="test" value="否" title="否">
-              </div>
-            </div>
-            <div class="layui-form-item">
-              <label class="layui-form-label"><span class="red">*</span>CB证书号：</label>
-              <div class="layui-input-block">
-                <input type="text" name="title" lay-verify="title" autocomplete="off" placeholder="" class="layui-input">
-              </div>
-            </div>
-            <div class="layui-form-item">
-              <label class="layui-form-label"><span class="red">*</span>获证日前：</label>
-              <div class="layui-input-block">
-                <input type="text" name="title" lay-verify="title" autocomplete="off" placeholder="" class="layui-input">
-              </div>
-            </div>
-            <div class="layui-form-item">
-              <label class="layui-form-label"><span class="red">*</span>颁发CB测试证书的认证机构：</label>
-              <div class="layui-input-block">
-                <input type="text" name="title" lay-verify="title" autocomplete="off" placeholder="" class="layui-input">
-              </div>
-            </div>
-            <div class="layui-form-item">
-              <label class="layui-form-label" style="width: auto;">
-                <span class="red">*</span>说明生产厂是否有同类产品获得过CCC证书或CQC证书，如果有，请列出证书编号：
-              </label>
-              <div class="layui-input-block ls">
                 <input type="text" name="title" lay-verify="title" autocomplete="off" placeholder="" class="layui-input">
               </div>
             </div>
             <div class="layui-form-item layui-form-text">
-              <label class="layui-form-label">备注：</label>
+              <label class="layui-form-label">其他说明：</label>
               <div class="layui-input-block">
                 <textarea placeholder="" class="layui-textarea"></textarea>
               </div>
@@ -799,15 +763,149 @@
           </div>
         <div class="layui-row btns">
           <div class=" layui-col-md2 layui-col-md-offset3">
-            <button type="button" class="layui-btn layui-btn-radius layui-btn-primary size16" id="prev" lay-filter="afterStep">上一步</button>
+            <button type="button" class="layui-btn layui-btn-radius layui-btn-primary size16 prev" lay-filter="afterStep">上一步</button>
           </div>
           <div class=" layui-col-md2">
             <button type="button" class="layui-btn layui-btn-radius layui-btn-primary size16"  lay-submit lay-filter="nextStep">保存草稿</button>
           </div>
           <div class=" layui-col-md2">
-            <button type="button" class="layui-btn layui-btn-radius layui-btn-normal size16"  lay-submit lay-filter="nextStep">下一步</button>
+            <button type="button" class="layui-btn layui-btn-radius layui-btn-normal size16 next">下一步</button>
           </div>
         </div>
+        </form>
+      </div>
+      <div class="step step3">
+        <form class="layui-form form1" action="">
+          <div class="layui-row">
+            <div class="layui-col-md12 title40 al bl br">
+              基本信息
+            </div>
+          </div>
+          <div class="form productInfo">
+            <div class="layui-form-item">
+              <label class="layui-form-label"><span class="red">*</span>证书、批准书/各类通知书邮寄地址：</label>
+              <div class="layui-input-block">
+                <input type="text" name="title" lay-verify="title" autocomplete="off" placeholder="" class="layui-input">
+              </div>
+            </div>
+            <div class="layui-form-item">
+              <div class="layui-inline">
+                <label class="layui-form-label"><span class="red">*</span>邮政编码：</label>
+                <div class="layui-input-block">
+                  <input type="text" name="title" lay-verify="title" autocomplete="off" placeholder="" class="layui-input">
+                </div>
+              </div>
+              <div class="layui-inline noleft">
+                <label class="layui-form-label"><span class="red">*</span>邮寄联系人：</label>
+                <div class="layui-input-inline">
+                  <input type="tel" name="phone" lay-verify="required" autocomplete="off" class="layui-input">
+                </div>
+              </div>
+            </div>
+            <div class="layui-form-item">
+              <label class="layui-form-label"><span class="red">*</span>手机号码：</label>
+              <div class="layui-input-block">
+                <input type="text" name="title" lay-verify="title" autocomplete="off" placeholder="" class="layui-input">
+              </div>
+            </div>
+            <div class="layui-form-item layui-form-text">
+              <label class="layui-form-label"><span class="red">*</span>其他说明：</label>
+              <div class="layui-input-block">
+                <textarea placeholder="" class="layui-textarea"></textarea>
+              </div>
+            </div>
+            <div class="layui-row btns">
+              <div class=" layui-col-md2 layui-col-md-offset3">
+                <button type="button" class="layui-btn layui-btn-radius layui-btn-primary size16 prev" lay-filter="afterStep">上一步</button>
+              </div>
+              <div class=" layui-col-md2">
+                <button type="button" class="layui-btn layui-btn-radius layui-btn-primary size16"  lay-submit lay-filter="nextStep">保存草稿</button>
+              </div>
+              <div class=" layui-col-md2">
+                <button type="button" class="layui-btn layui-btn-radius layui-btn-normal size16 next">下一步</button>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="step step4">
+        <form class="layui-form" action="">
+          <div class="layui-row">
+            <div class="layui-col-md12 title">
+              变更类别
+            </div>
+            <div class="layui-col-md6 input">
+              <input type="radio" name="product4" lay-filter="product4" value="0" title="（01）商标变更" checked>
+            </div>
+            <div class="layui-col-md6 input br">
+              <input type="radio" name="product4" lay-filter="product4" value="1" title="（02）由于产品命名方法的变化引起的获证产品名称、型号更改">
+            </div>
+            <div class="layui-col-md6 input">
+              <input type="radio" name="product4" lay-filter="product4" value="2" title="（03）产品型号更改、不影响电器安全的内部结构不变（经判断不涉及安全和电磁兼容问题）">
+            </div>
+            <div class="layui-col-md6 input br">
+              <input type="radio" name="product4" lay-filter="product4" value="3" title="（04）在证书上增加同种产品其它型号">
+            </div>
+            <div class="layui-col-md6 input">
+              <input type="radio" name="product4" lay-filter="product4" value="4" title="（05）在证书上减少同种产品其它型号">
+            </div>
+            <div class="layui-col-md6 input br">
+              <input type="radio" name="product4" lay-filter="product4" value="5" title="（06）生产企业名称更改，地址不变，生产企业没有搬迁">
+            </div>
+            <div class="layui-col-md6 input">
+              <input type="radio" name="product4" lay-filter="product4" value="6" title="（07）生产企业名称更改，地址名称变化，生产企业没有搬迁">
+            </div>
+            <div class="layui-col-md6 input br">
+              <input type="radio" name="product4" lay-filter="product4" value="7" title="（08）生产企业名称不变，地址名称更改，生产企业没有搬迁">
+            </div>
+            <div class="layui-col-md6 input">
+              <input type="radio" name="product4" lay-filter="product4" value="8" title="（09）生产企业搬迁">
+            </div>
+            <div class="layui-col-md6 input br">
+              <input type="radio" name="product4" lay-filter="product4" value="9" title="（10）原认证委托人的名称和/或地址更改">
+            </div>
+            <div class="layui-col-md6 input">
+              <input type="radio" name="product4" lay-filter="product4" value="10" title="（11）原生产者（制造商）的名称和/和地址更改">
+            </div>
+            <div class="layui-col-md6 input br">
+              <input type="radio" name="product4" lay-filter="product4" value="11" title="（12）产品认证所依据的国家标准、技术规则或者认证实施细则发生了变化">
+            </div>
+            <div class="layui-col-md6 input">
+              <input type="radio" name="product4" lay-filter="product4" value="12" title="（13）由于产品命名方法的变化引起的获证产品名称、型号更改">
+            </div>
+            <div class="layui-col-md6 input br">
+              <input type="radio" name="product4" lay-filter="product4" value="13" title="（14）增加/减少适用性一致的关键件供应商或关键件供应商名称变更">
+            </div>
+            <div class="layui-col-md6 input">
+              <input type="radio" name="product4" lay-filter="product4" value="14" title="（15）生产企业的质量体系发生变化（例如所有权、组织机构或管理者发生了变化）">
+            </div>
+            <div class="layui-col-md6 input br">
+              <input type="radio" name="product4" lay-filter="product4" value="15" title="（16）其他机构换证申请">
+            </div>
+            <div class="layui-col-md6 input">
+              <input type="radio" name="product4" lay-filter="product4" value="16" title="（17）到期换证">
+            </div>
+            <div class="layui-col-md6 input br">
+              <input type="radio" name="product4" lay-filter="product4" value="17" title="（18）复审">
+            </div>
+          </div>
+          <div class="layui-row mods">
+            <div class="layui-col-md12 title size14">
+              相关附件<span class="blue">注：初次申请时标*的选项必须提供相应材料，其他选项在适用时提供；以下材料应在适当阶段提供适当内容。</span>
+            </div>
+            <table class="tables" id="table1"></table>
+            <div class="layui-row btns">
+              <div class=" layui-col-md2 layui-col-md-offset3">
+                <button type="button" class="layui-btn layui-btn-radius layui-btn-primary size16 prev" lay-filter="afterStep">上一步</button>
+              </div>
+              <div class=" layui-col-md2">
+                <button type="button" class="layui-btn layui-btn-radius layui-btn-primary size16" lay-submit lay-filter="nextStep">保存草稿</button>
+              </div>
+              <div class=" layui-col-md2">
+                <button type="button" class="layui-btn layui-btn-radius layui-btn-normal size16" lay-submit lay-filter="nextStep">提交申请</button>
+              </div>
+            </div>
+          </div>
         </form>
       </div>
     </div>
@@ -823,14 +921,142 @@
       </form>
       <table class="layui-hide" id="test"></table>
     </div>
-    <div class="footer">
-      <p>深圳世标检测认证股份有限公司 版权所有</p>
-      <p>联系电话： 0086-0755-26996143/4/5 0086-075526996192（LINE）</p>
-      <p>World Standardization Certification & Testing Group（Shenzhen）Co., LTD</p>
+    <!-- 合格证管理、填写认证申请 -->
+    <div class="page" id="cers" data-header="合格证管理_填写认证申请" data-url="index">
+      <div class="layui-row">
+        <div class="layui-col-md6 part part1 marginbottom15">
+          <div class="part_header">
+            <div>
+              <img src="images/3-1.png" alt="">
+              <span>CCC认证-强制性认证</span>
+            </div>
+          </div>
+          <ul>
+            <li><div class="dotted"></div>填写认证新申请书</li>
+            <li><div class="dotted"></div>填写认证变更申请书</li>
+            <li><div class="dotted"></div>填写利用已获证书结果申请书</li>
+            <li style="border:none"><div class="dotted"></div>填写认证新申请书</li>
+          </ul>
+        </div>
+        <div class="layui-col-md6 part">
+          <div class="part_header">
+            <div>
+              <img src="images/3-2.png" alt="">
+              <span>CCC认证-自愿性认证</span>
+            </div>
+          </div>
+          <ul>
+            <li><div class="dotted"></div>填写认证新申请书</li>
+            <li><div class="dotted"></div>填写认证变更申请书</li>
+            <li><div class="dotted"></div>填写利用已获证书结果申请书</li>
+            <li style="border:none"><div class="dotted"></div>填写认证新申请书</li>
+          </ul>
+        </div>
+      </div>
+      <div class="layui-row">
+        <div class="layui-col-md6 part part1 marginbottom15">
+          <div class="part_header">
+            <div>
+              <img src="images/3-3.png" alt="">
+              <span>其他认证</span>
+            </div>
+          </div>
+          <ul>
+            <li><div class="dotted"></div>填写认证新申请书</li>
+            <li><div class="dotted"></div>填写认证变更申请书</li>
+            <li><div class="dotted"></div>填写利用已获证书结果申请书</li>
+            <li style="border:none"><div class="dotted"></div>填写认证新申请书</li>
+          </ul>
+        </div>
+      </div>
     </div>
+    <!-- 支付款项 -->
+    <div class="page" id="payDetail" data-header="合格证管理_填写认证申请" data-url="index">
+      <p class="boder_1">支付款项</p>
+      <div class="layui-row mods">
+        <div class="layui-col-md12 title size14 bl">
+          报价明细
+        </div>
+        <table class="tables" id="table2"></table>
+        <form class="layui-form form1" action="">
+          <div class="layui-row">
+            <div class="layui-col-md12 title40 al bl br bt">
+              基本信息
+            </div>
+          </div>
+          <div class="form productInfo">
+            <div class="layui-form-item">
+              <label class="layui-form-label">委托人：</label>
+              <div class="layui-input-block">
+                <span>河北蓝瑞照明科技有限公司</span>
+              </div>
+            </div>
+            <div class="layui-form-item">
+              <label class="layui-form-label">申请编号：</label>
+              <div class="layui-input-block">
+                <span>CB2019CQC-087255</span>
+              </div>
+            </div>
+            <div class="layui-form-item">
+              <label class="layui-form-label">待支付金额：</label>
+              <div class="layui-input-block">
+                <span>3000.00</span>
+              </div>
+            </div>
+            <div class="layui-form-item">
+              <label class="layui-form-label"><span class="red">*</span>支付方式：</label>
+              <div class="layui-input-block">
+                <input type="radio" name="payMethod" value="现结" title="现结" checked="">
+                <input type="radio" name="payMethod" value="协议月结" title="协议月结">
+                <input type="radio" name="payMethod" value="担保" title="担保">
+                <input type="text" name="payMethod" lay-verify="title" autocomplete="off" placeholder="担保人姓名" class="layui-input">
+              </div>
+            </div>
+            <div class="layui-form-item">
+              <label class="layui-form-label"><span class="red">*</span>金额：</label>
+              <div class="layui-input-block">
+                <input type="text" name="title" lay-verify="title" autocomplete="off" placeholder="" class="layui-input">
+              </div>
+            </div>
+            <div class="layui-form-item">
+              <label class="layui-form-label">打款凭证：</label>
+              <div class="layui-input-block">
+              </div>
+            </div>
+            <div class="layui-form-item">
+              <label class="layui-form-label">其他资料：</label>
+              <div class="layui-input-block">
+              </div>
+            </div>
+            <div class="layui-form-item layui-form-text">
+              <label class="layui-form-label">备注：</label>
+              <div class="layui-input-block">
+                <textarea placeholder="" class="layui-textarea"></textarea>
+              </div>
+            </div>
+          </div>
+        </form>
+        <div class="layui-row btns">
+          <div class=" layui-col-md2 layui-col-md-offset4">
+            <button type="button" class="layui-btn layui-btn-radius layui-btn-primary size16 prev" lay-filter="afterStep">取消</button>
+          </div>
+          <div class=" layui-col-md2">
+            <button type="button" class="layui-btn layui-btn-radius layui-btn-normal size16" lay-submit lay-filter="nextStep">确定</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    <p><img src="images/footLogo.png" alt="" srcset="">粤ICP备11022419号-3 版权所有：深圳市计量质量检测研究院</p>
   </div>
   <script type="text/html" id="barDemo">
     <a class="first_a" lay-event="edit">申请详情</a>
+    <a class="" lay-event="del">删除</a>
+  </script>
+  <script type="text/html" id="barDemo1">
+    <a class="first_a" lay-event="edit">上传</a>
+    <a class="first_a" lay-event="edit">重新上传</a>
     <a class="" lay-event="del">删除</a>
   </script>
 <script src="layui/layui.js"></script>

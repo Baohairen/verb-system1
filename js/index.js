@@ -63,29 +63,93 @@ layui.use('table', function(){
       {id:'19',lsh:'00000001',sqbt:'河北蓝瑞筒灯',wtr:'河北蓝瑞照明科技有限公司',cpmc:'电线电缆',rzlb:'CCC',sqlb:'新申请',sqsj:'2019-03-15 17:27',dqzt:'待审核',dqjd:'等待受理'},
     ]
   });
+  table.render({
+    elem: '#table1',
+    url:'',
+    cols: [[
+      {field:'info', title: '附件信息',align:'center',width:'38%'}
+      ,{field:'file', title: '文件名',align:'center',width:'28%'}
+      ,{field:'time', title: '上传时间',align:'center'}
+      ,{field:'size',  title: '文件大小',align:'center',width:100}
+      ,{fixed: 'right', title:'操作', toolbar: '#barDemo1',align:'center',width:180}
+    ]],
+    page: true,
+    limit:12,
+    data:[
+      {info:'申请方、制造方、生产厂法律地位证明（法人营业执照复印件，三者不同需分别提供， 若委托人为代理，须提交授权委托书及授权双方身',file:'申请方证明.pdf,制造方证明.pdf,生产厂证明.pdf',time:'2019-03-15 17:27',size:'180kb'},
+      {info:'申请方与制造商的关系说明（当申请方与制造商不一致时需提供）',file:'/',time:'/',size:'/'},
+      {info:'制造商与生产厂的ODM/OEM协议（当制造商与生产厂不一致时提供）',file:'/',time:'/',size:'/'},
+      {info:'申请方与制造商的关系说明（当申请方与制造商不一致时需提供）',file:'/',time:'/',size:'/'},
+      {info:'申请方与制造商的关系说明（当申请方与制造商不一致时需提供）',file:'/',time:'/',size:'/'},
+      {info:'申请方与制造商的关系说明（当申请方与制造商不一致时需提供）',file:'/',time:'/',size:'/'},
+      {info:'申请方与制造商的关系说明（当申请方与制造商不一致时需提供）',file:'/',time:'/',size:'/'},
+      {info:'申请方与制造商的关系说明（当申请方与制造商不一致时需提供）',file:'/',time:'/',size:'/'},
+      {info:'申请方与制造商的关系说明（当申请方与制造商不一致时需提供）',file:'/',time:'/',size:'/'},
+    ]
+  });
+  table.render({
+    elem: '#table2',
+    url:'',
+    cols: [[
+      {field:'id', title: '序号',align:'center',width:110}
+      ,{field:'project', title: '收费项目',align:'center'}
+      ,{field:'fee', title: '费用（人民币/元）',align:'center'}
+      ,{field:'bz',  title: '备注',align:'center',width:'50%'}
+    ]],
+    limit:12,
+    data:[
+      {id:'1',project:'申请费',fee:'1000',bz:'实际人/日数依受审工厂规模和认证产品数量而定（一般为4-6个人/日，包括文审人/日数）'},
+      {id:'2',project:'申请费',fee:'1000',bz:'实际人/日数依受审工厂规模和认证产品数量而定（一般为4-6个人/日，包括文审人/日数）'},
+      {id:'3',project:'申请费',fee:'1000',bz:'实际人/日数依受审工厂规模和认证产品数量而定（一般为4-6个人/日，包括文审人/日数）'},
+      {id:'4',project:'申请费',fee:'1000',bz:'实际人/日数依受审工厂规模和认证产品数量而定（一般为4-6个人/日，包括文审人/日数）'},
+      {id:'5',project:'申请费',fee:'1000',bz:'实际人/日数依受审工厂规模和认证产品数量而定（一般为4-6个人/日，包括文审人/日数）'},
+      {id:'6',project:'申请费',fee:'1000',bz:'实际人/日数依受审工厂规模和认证产品数量而定（一般为4-6个人/日，包括文审人/日数）'},
+      {id:'费用合计',project:'6000'},
+      {id:'优惠后总费用',project:'6000'}
+    ]
+  });
+  $('#payDetail .layui-table-body tr').eq(-2).addClass('bgcolor');
+  $('#payDetail .layui-table-body tr').eq(-1).addClass('bgcolor');
+  $('#payDetail .layui-table-body tr').eq(-2).children().eq(0).attr('colspan',2);
+  $('#payDetail .layui-table-body tr').eq(-2).children().eq(1).attr('colspan',2);
+  $('#payDetail .layui-table-body tr').eq(-1).children().eq(0).attr('colspan',2);
+  $('#payDetail .layui-table-body tr').eq(-1).children().eq(1).attr('colspan',2);
 });
 var firstMenu = 'apply';
-var headerInfo = '首页_填写WSCT认证申请书';
+var headerInfo = '';
 $('.leftNav li a').click(function(){
   var id = $(this)[0].dataset.id;
-  var url = $(this)[0].dataset.url;
+  $('.leftNav li a').removeClass('a_active');
+  $(this).addClass('a_active');
+  if($(this).find('.layui-icon-down').length>0){
+    $(this).find('.layui-icon-down').addClass('layui-icon-up').removeClass('layui-icon-down');
+  }else{
+    $(this).find('.layui-icon-up').addClass('layui-icon-down').removeClass('layui-icon-up');
+  }
   if(!id){
     return
   }
   var header = $(this)[0].dataset.header;
   headerInfo = header;
+  header?$('.menus').show():$('.menus').hide();
   $('.page').hide();
-  console.log(header)
-  $('.firstMenu').text(header.substring(0,header.indexOf('_')));
-  $('.secondMenu').text(header.substring(header.indexOf('_')+1));
+  $('.menu_title1').text(header.substring(0,header.indexOf('_')));
+  $('.menu_title2').text(header.substring(header.indexOf('_')+1));
   $('.layui-body').scrollTop(0);
   $('#'+id).show();
-  firstMenu = url;
 })
-$('#prev').click(function(){
+let currentStep = 1;
+$('.prev').click(function(){
+  $('.step_menu'+currentStep).removeClass('active');
+  currentStep--;
   $('.step').hide();
-  $('.second').removeClass('active');
-  $('.step1').show();
+  $('.step'+currentStep).show();
+})
+$('.next').click(function(){
+  currentStep++;
+  $('.step').hide();
+  $('.step_menu'+currentStep).addClass('active');
+  $('.step'+currentStep).show();
 })
 var clickNum = '';
 $('.firstMenu>a').click(function(){

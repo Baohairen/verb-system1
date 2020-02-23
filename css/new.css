@@ -1,7 +1,7 @@
 .layui-layout-admin .layui-side{
   top: 108px;
   left: 30px;
-  bottom: 44px;
+  bottom: 60px;
   width: 180px;
   background: url('../images/leftBg.png') no-repeat;
   background-size: cover;
@@ -46,5 +46,127 @@
 .layui-layout-admin .layui-body{
   top: 108px;
   left: 230px;
+  bottom: 60px;
+  right: 15px;
   background: #fff;
+  border-radius: 5px;
+}
+.footer{
+  position: fixed;
+  bottom: 10px;
+  font-size: 12px;
+}
+.footer img{
+  width: 20px;
+  height: 22px;
+  margin-right: 10px;
+}
+.mb30{
+  margin-bottom: 30px;
+}
+.noboder{
+  border: none;
+}
+.cers{
+  padding-top: 10px;
+  min-height: 136px;
+}
+.layui-nav-tree .layui-nav-child .layui-this>a{
+  background: #F2F5FC!important;
+  color: #666666!important;
+}
+.layui-nav-tree .layui-nav-child .layui-this>a.a_active{
+  background: #2F87F5!important;
+  color: #fff!important;
+}
+.menus{
+  display: none;
+  color: #666666;
+  font-size: 13px;
+  padding: 10px 230px;
+}
+.menu_title1{
+  margin-right: 6px;
+}
+.menu_title2{
+  margin-left: 6px;
+}
+.layui-form-radio>i{
+  font-size: 16px;
+  margin-right: 4px;
+}
+.layui-form-radio>div{
+  font-size: 13px;
+  color: #171A1E;
+}
+.step2 .title40,.step3 .title40,#payDetail .title40{
+  line-height: 40px;
+}
+.step2 .form .layui-form-item .noleft .layui-form-label{
+  width: 60px;
+}
+.step3 .form .layui-form-item .noleft .layui-form-label{
+  width: 100px;
+}
+.step3 .btns{
+  padding-bottom: 20px;
+}
+.step4 .layui-table,.step4 .layui-table-view{
+  margin-top: 0;
+}
+.step4 .layui-table thead tr{
+  background: none;
+}
+.blue{
+  color: #65A1EA;
+  font-size: 12px;
+  margin-left: 8px;
+}
+#cers{
+  padding: 20px 10px;
+}
+.bgcolor{
+  background: #F7F7F7;
+  color: #333;
+  font-size: 14px;
+}
+#payDetail{
+  padding: 10px 20px;
+}
+#payDetail .layui-form-item .layui-form-label{
+  width: 100px;
+}
+#payDetail .layui-form-item .layui-form-label + .layui-input-block{
+  margin-left: 100px;
+}
+.boder_1{
+  color: #2077E2;
+  padding-left: 12px;
+  position: relative;
+}
+.boder_1::after{
+  content: '';
+  width: 2px;
+  height: 15px;
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 3px;
+  background: #2077E2;
+}
+#payDetail .layui-table,#payDetail .layui-table-view{
+  margin-top: 0;
+}
+#payDetail .form1{
+  margin-top: 15px;
+}
+#payDetail .layui-input-block{
+  line-height: 36px;
+}
+#payDetail .layui-input{
+  width: 200px;
+  display: inline-block;
+}
+#payDetail .layui-textarea{
+  width: 94%;
 }

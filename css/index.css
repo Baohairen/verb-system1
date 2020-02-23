@@ -12,7 +12,7 @@ body,html{
     font-size: 14px!important;
 }
 .size16{
-    font-size: 16px!important;
+    font-size: 14px!important;
 }
 /* 修改end */
 .layui-header{
@@ -59,17 +59,10 @@ body,html{
 .mynavbar .layui-nav-bar{
     width: 0;
 }
-.mynavbar .yiji:hover,.mynavbar .yiji>a:hover{
-    background: rgba(9,167,236,1);
-    color: #fff!important;
-}
 .layui-logo img{
     width: 75%;
     position: relative;
     top: 5px;
-}
-.layui-nav .layui-this:after{
-    background: #fff;
 }
 /* 修改start */
 ul li a{
@@ -95,10 +88,10 @@ ul li a{
 }
 .layui-nav-tree .layui-nav-child dd.layui-this, .layui-nav-tree .layui-nav-child dd.layui-this a, .layui-nav-tree .layui-this, .layui-nav-tree .layui-this>a, .layui-nav-tree .layui-this>a:hover {
     /* background-color: #09a7ec!important; */
-    color: #09a7ec!important;
+    color: #09a7ec;
 }
 .layui-nav-tree .layui-nav-child dd.layui-this, .layui-nav-tree .layui-nav-child dd.layui-this a, .layui-nav-tree .layui-this, .layui-nav-tree .layui-this>a, .layui-nav-tree .layui-this>a:hover {
-    background-color: #fff!important;
+    background-color: #fff;
     color: #09a7ec;
 }
 .layui-nav .layui-nav-child dd.layui-this a, .layui-nav-child dd.layui-this {
@@ -131,50 +124,51 @@ ul li a{
 /* 修改end */
 .system{
     width: 100%;
-    /* height: 100%; */
     padding: 15px 0; 
+    position: relative;
 }
 .system h3{
-    font-size:20px;
+    font-size:14px;
     font-family:MicrosoftYaHei;
     font-weight:bold;
-    color:rgba(23,26,30,1);
+    color:#2F87F5;
     margin-bottom: 15px;
 }
 .system p{
-    font-size:16px;
-    line-height: 25px;
+    font-size:13px;
     font-family:MicrosoftYaHei;
     font-weight:400;
-    color:rgba(23,26,30,1);
+    color:#666;
 }
 .left_div{
-    width: calc(100% - 240px);
+    width: calc(100% - 180px);
     float: left;
 }
 .right_div{
-    width: 240px;
+    width: 180px;
     float: right;
+    position: absolute;
+    top: 20px;
+    right: 0;
 }
 .right_div img{
-    width: 100px;
+    width: 70px;
     height: auto;
-    vertical-align:top;
-    margin:0 5px;
+    display: block;
+    margin: 0 auto;
 }
 .right_div div{
-    display: inline-block;
-    width: 100px;
-    font-size: 13px;
+    text-align: center;
+    font-size: 12px;
+    color: #666;
 }
 .third_p{
     margin-bottom: 15px;
 }
 .part{
     width: 49%;
-    height: 190px;
     background:rgba(255,255,255,1);
-    border:1px solid rgba(185,215,234,1);
+    border:1px solid #E3E3E3;
 }
 .part1{
     margin-right: 15px;
@@ -187,14 +181,13 @@ ul li a{
     height: 40px;
     line-height: 40px;
     padding: 0 15px;
-    background: url(../images/bg1.png) no-repeat;
-    background-size: 100% 100%;
+    background: #F2F2F2;
     box-sizing: border-box;
 }
 .part_header>div{
     height: 25px;
     line-height: 25px;
-    color: #fff;
+    color: #666666;
     font-size: 14px;
     display: inline-block;
 }
@@ -208,59 +201,51 @@ ul li a{
 .part_header img{
     width: 20px;
     height: 20px;
+    margin-right:5px;
 }
 .part ul{
     width: 100%;
 }
 .part ul li{
-    width: 100%;
-    height: 30px;
-    line-height: 30px;
-    border-bottom: 1px solid rgba(221,240,251,1);
+    margin: 0 20px;
+    height: 34px;
+    line-height: 34px;
+    border-bottom: 1px solid #EEEEEE;
     box-sizing: border-box;
-    font-size: 16px;
+    font-size: 13px;
+    color: #666;
 }
 .part ul li:hover{
-    color:rgba(9,167,236,1);
+    color:#2F87F5;
+}
+.part ul li:hover .dotted{
+    background: #2F87F5;
 }
 .dotted{
     width:4px;
     height:4px;
     display: inline-block;
-    background:rgba(0,159,229,1);
+    background:#D4D4D4;
     border-radius:2px;
-    margin: 0 8px 2px 9px;
+    margin: 0 20px 2px 0;
 }
 .list_row{
-    padding: 10px 0;
+    padding: 10px 20px 0 20px;
 }
 .list_row2{
     padding: 10px 0 0;
     height: 25px;
 }
 .list_div{
-    height:30px;
-    margin-bottom: 15px;
+    height:34px;
 }
 .list_div_div{
-    width: 90%;
     margin: 0 auto;
     height: 100%;
-    background:linear-gradient(0deg,rgba(255,255,255,1),rgba(234,243,255,1),rgba(254,254,254,1));
-    border:1px solid rgba(185, 215, 234, 1);
-    border-radius:2px;
-    line-height: 30px;
-    font-size: 16px;
-}
-.list_div_div1{
-    width: 90%;
-    margin: 0 auto;
-    height: 100%;
-    background:linear-gradient(0deg,rgba(255,255,255,1),rgba(234,243,255,1),rgba(254,254,254,1));
-    border:1px solid rgba(185, 215, 234, 1);
-    border-radius:2px;
-    line-height: 25px;
-    font-size: 12px;
+    line-height: 34px;
+    font-size: 13px;
+    color: #666;
+    border-bottom: 1px solid #EEEEEE;
 }
 .footer{
     width: 100%;
@@ -287,13 +272,13 @@ ul li a{
 .stepInfo div{
     width: 200px;
     height: 38px;
-    font-size: 18px;
+    font-size: 14px;
     text-align: center;
     line-height: 38px;
     background: url('../images/progress.png') no-repeat;
     background-size: 100% 100%;
 }
-.stepInfo div.first{
+.stepInfo div.step_menu1{
     background: url('../images/progress_active.png') no-repeat;
     background-size: 100% 100%;
     color: white;
@@ -304,8 +289,7 @@ ul li a{
     color: white;
 }
 .layui-form .input{
-    /* height: 40px; */
-    line-height: 40px;
+    line-height: 34px;
 }
 .stepInfo{
     display: flex;
@@ -320,23 +304,21 @@ ul li a{
     display: block;
     padding-right: 40px;
 }
-.step .title{
-    line-height: 50px;
-    color: #171A1E;
-    font-size: 16px;
+.step .title,#payDetail .title{
+    line-height: 40px;
+    color: #666;
+    font-size: 14px;
     background: #f7f7f7;
     padding-left: 15px;
-    font-weight: bold;
     border-top: 1px solid #eeeeee;
     border-right: 1px solid #eeeeee;
 }
 .title40{
-    line-height: 40px;
+    line-height: 28px;
     color: #171A1E;
-    font-size: 14px;
+    font-size: 13px;
     background: #f7f7f7;
     padding-left: 15px;
-    font-weight: bold;
 }
 .mods{
     margin: 15px 0;
@@ -344,20 +326,20 @@ ul li a{
 .br{
     border-right: 1px solid #eeeeee;
 }
-.step1 .layui-col-md6,.step1 .layui-col-md12{
+.step1 .layui-col-md6,.step1 .layui-col-md12,.step4 .layui-col-md6,.step4 .layui-col-md12{
     padding-left: 15px;
     border-left: 1px solid #eeeeee;
     border-bottom: 1px solid #eeeeee;
 }
-.step1 .layui-form-radio{
-    line-height: 40px;
+.step1 .layui-form-radio,.step4 .layui-form-radio{
+    line-height: 28px;
     margin: 6px 0;
     padding-right: 0;
 }
 .layui-form-radio>i:hover, .layui-form-radioed>i {
     color: #09a7ec;
 }
-.step1 .mods .fw{
+.step1 .mods .fw,.step4 .mods .fw{
     border: none;
     border-left: 1px solid #eeeeee;
     border-right: 1px solid #eeeeee;
@@ -368,6 +350,9 @@ ul li a{
 .bl{
     border-left: 1px solid #eeeeee!important;
 }
+.bt{
+    border-top: 1px solid #eeeeee!important;
+}
 .bn{
     border-right: none;
     border-top:none ;
@@ -377,24 +362,23 @@ ul li a{
     margin: 0 5px;
 }
 .fw .layui-form-radio div{
-    font-weight: bold;
     color: #171A1E;
 }
 .fw .infos{
     display: inline-block;
     font-size: 14px;
-    margin: 6px 0;
+    margin: 3px 0;
     vertical-align: top;
 }
 .fw .infos p{
-    line-height: 30px;
+    line-height: 26px;
     font-size: 12px;
     color: #666;
 }
 .fw .infos p span{
     font-weight: bold;
 }
-.step2 .form{
+.step2 .form,.step3 .form,#payDetail .form{
     border: 1px solid #eee;
 }
 .form1{
@@ -413,14 +397,18 @@ ul li a{
     margin-top: 15px;
     border: 1px solid #eee;
 }
+.tables{
+    width: 100%;
+    height: auto;
+}
 .layui-table {
     width: 100%!important;
 }
 .layui-table td{
-    font-size: 14px;
+    font-size: 13px;
 }
 .layui-table th {
-    font-size: 16px;
+    font-size: 14px;
 }
 .layui-table a{
     color: #009fe5;
@@ -483,8 +471,14 @@ ul li a{
     margin: 0 10px;
 }
 .useInfo .fw .layui-btn-primary,.useInfo .fw .layui-btn-primary:hover{
-    color: #009FE5;
-    border-color: #009FE5;
+    color: #fff;
+    background: #2077E2;
+    border-radius: 2px;
+    border-color: #2077E2;
+}
+.layui-btn-normal{
+    background: #2077E2;
+    border-radius: 2px;
 }
 .btns{
     padding: 20px 0 5px 10px;
@@ -504,16 +498,15 @@ ul li a{
 .step2 .layui-input-block{
     margin-left: 120px;
 }
-.step2 .layui-form-item{
+.step2 .layui-form-item,.step3 .layui-form-item{
     margin: 10px 0;
 }
-.step2 .layui-input,.step2 .layui-textarea{
+.step2 .layui-input,.step2 .layui-textarea,.step3 .layui-input,.step3 .layui-textarea{
     width: 80%;
 }
 .step2 .product{
     padding: 9px 0;
     line-height: 20px;
-    font-weight: bold;
 }
 .step2 .form .layui-form-item .width160{
     width: 200px!important;
@@ -529,39 +522,52 @@ ul li a{
     vertical-align: middle;
 }
 .step2 .form .layui-form-item .layui-form-label{
-    width: 180px;
+    width: 160px;
 }
 .step2 .form .layui-form-item .layui-form-label + .layui-input-block{
-    margin-left: 180px;
+    margin-left: 160px;
 }
-.step2 .productInfo .layui-form-item .layui-form-label{
-    width: 260px;
+.step3 .form .layui-form-item .layui-form-label{
+    width: 246px;
 }
-.step2 .productInfo .layui-form-item .layui-form-label + .layui-input-block{
-    margin-left: 260px;
+.step3 .form .layui-form-item .layui-form-label + .layui-input-block{
+    margin-left: 246px;
+}
+.step2 .titleInfo .layui-form-item .layui-form-label{
+    width: 100px;
+}
+.step2 .titleInfo .layui-form-item .layui-form-label + .layui-input-block{
+    margin-left: 100px;
 }
 .step2 .productInfo .ls .layui-input{
     width: 50%;
 }
 .step2 .layui-form-item .layui-inline{
-    width: 42%;
+    width: 27.9%;
 }
-.step2 .layui-form-item .layui-inline .layui-input-inline{
-    width: calc(100% - 220px);
+.step3 .layui-form-item .layui-inline{
+    width: 47%;
+}
+.step2 .layui-form-item .layui-inline.noleft .layui-input-inline{
+    width: calc(100% - 100px);
+}
+.step3 .layui-form-item .layui-inline.noleft .layui-input-inline{
+    width: calc(100% - 150px);
 }
 .step2 .layui-form-item .layui-inline .layui-input-inline .layui-input{
     width: 100%;
 }
 .step2 .smbtn{
-    height: 26px;
-    line-height: 26px;
+    height: 22px;
+    line-height: 22px;
     margin-left: 20px;
-    font-size: 14px;
+    font-size: 12px;
 }
-.step2 .btns .layui-btn{
+.btns .layui-btn{
     width: 130px;
+    border-radius: 2px;
 }
-.step2 .btns .layui-btn:hover{
+.btns .layui-btn:hover{
     border-color: #09a7ec;
 } 
 .layui-form-checked[lay-skin=primary] i{
@@ -571,10 +577,3 @@ ul li a{
 .content_header .icon{
     margin: 0 10px;
 }
-.mynavbar .yiji>a.active{
-    background: #09a7ec;
-    color: #fff!important;
-}
-/* .firstMenu{
-    cursor: pointer;
-} */
