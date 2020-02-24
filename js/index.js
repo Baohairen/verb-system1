@@ -116,19 +116,20 @@ layui.use('table', function(){
     cols: [[
       {field:'id', title: '序号',align:'center',width:110}
       ,{field:'project', title: '收费项目',align:'center',width:150}
-      ,{field:'fee', title: '费用（人民币/元）',align:'center',width:150}
-      ,{field:'bz',  title: '备注',align:'center',width:'50%'}
+      ,{field:'fee', title: '费用（人民币/元）',align:'center',width:120}
+      ,{field:'bz',  title: '备注',align:'center',width:'40%',templet:'#bz'}
+      ,{field:'fee1',  title: '实际支付费用',align:'center',width:120}
     ]],
     limit:12,
     data:[
-      {id:'1',project:'申请费',fee:'1000',bz:'实际人/日数依受审工厂规模和认证产品数量而定（一般为4-6个人/日，包括文审人/日数）'},
-      {id:'2',project:'申请费',fee:'1000',bz:'实际人/日数依受审工厂规模和认证产品数量而定（一般为4-6个人/日，包括文审人/日数）'},
-      {id:'3',project:'申请费',fee:'1000',bz:'实际人/日数依受审工厂规模和认证产品数量而定（一般为4-6个人/日，包括文审人/日数）'},
-      {id:'4',project:'申请费',fee:'1000',bz:'实际人/日数依受审工厂规模和认证产品数量而定（一般为4-6个人/日，包括文审人/日数）'},
-      {id:'5',project:'申请费',fee:'1000',bz:'实际人/日数依受审工厂规模和认证产品数量而定（一般为4-6个人/日，包括文审人/日数）'},
-      {id:'6',project:'申请费',fee:'1000',bz:'实际人/日数依受审工厂规模和认证产品数量而定（一般为4-6个人/日，包括文审人/日数）'},
-      {project:'费用合计',fee:'6000'},
-      {project:'优惠后总费用',fee:'6000'}
+      {id:'1',project:'申请费',fee:'1000',bz:'实际人/日数依受审工厂规模和认证产品数量而定（一般为4-6个人/日，包括文审人/日数）',fee1:'1000'},
+      {id:'2',project:'申请费',fee:'1000',bz:'实际人/日数依受审工厂规模和认证产品数量而定（一般为4-6个人/日，包括文审人/日数）',fee1:'1000'},
+      {id:'3',project:'申请费',fee:'1000',bz:'实际人/日数依受审工厂规模和认证产品数量而定（一般为4-6个人/日，包括文审人/日数）',fee1:'1000'},
+      {id:'4',project:'申请费',fee:'1000',bz:'实际人/日数依受审工厂规模和认证产品数量而定（一般为4-6个人/日，包括文审人/日数）',fee1:'1000'},
+      {id:'5',project:'申请费',fee:'1000',bz:'实际人/日数依受审工厂规模和认证产品数量而定（一般为4-6个人/日，包括文审人/日数）',fee1:'1000'},
+      {id:'6',project:'申请费',fee:'1000',bz:'实际人/日数依受审工厂规模和认证产品数量而定（一般为4-6个人/日，包括文审人/日数）',fee1:'1000'},
+      {project:'费用合计',fee:'6000',fee1:'6000'},
+      {project:'优惠后总费用',fee:'6000',fee1:'6000'}
     ]
   });
   table.render({
@@ -138,30 +139,41 @@ layui.use('table', function(){
       {field:'id', title: '序号',align:'center',width:110}
       ,{field:'project', title: '收费项目',align:'center',width:150}
       ,{field:'fee', title: '费用（人民币/元）',align:'center',width:150}
-      ,{field:'bz',  title: '备注',align:'center',width:'50%'}
+      ,{field:'bz',  title: '备注',align:'center',width:'40%',templet:'#bz'}
+      ,{field:'fee1',  title: '实际支付费用',align:'center',width:120}
     ]],
     limit:12,
     data:[
-      {id:'1',project:'申请费',fee:'1000',bz:'实际人/日数依受审工厂规模和认证产品数量而定（一般为4-6个人/日，包括文审人/日数）'},
-      {id:'2',project:'申请费',fee:'1000',bz:'实际人/日数依受审工厂规模和认证产品数量而定（一般为4-6个人/日，包括文审人/日数）'},
-      {id:'3',project:'申请费',fee:'1000',bz:'实际人/日数依受审工厂规模和认证产品数量而定（一般为4-6个人/日，包括文审人/日数）'},
-      {id:'4',project:'申请费',fee:'1000',bz:'实际人/日数依受审工厂规模和认证产品数量而定（一般为4-6个人/日，包括文审人/日数）'},
-      {id:'5',project:'申请费',fee:'1000',bz:'实际人/日数依受审工厂规模和认证产品数量而定（一般为4-6个人/日，包括文审人/日数）'},
-      {id:'6',project:'申请费',fee:'1000',bz:'实际人/日数依受审工厂规模和认证产品数量而定（一般为4-6个人/日，包括文审人/日数）'},
-      {project:'费用合计',fee:'6000'},
-      {project:'优惠后总费用',fee:'6000'}
+      {id:'1',project:'申请费',fee:'1000',bz:'实际人/日数依受审工厂规模和认证产品数量而定（一般为4-6个人/日，包括文审人/日数）',fee1:'1000'},
+      {id:'2',project:'申请费',fee:'1000',bz:'实际人/日数依受审工厂规模和认证产品数量而定（一般为4-6个人/日，包括文审人/日数）',fee1:'1000'},
+      {id:'3',project:'申请费',fee:'1000',bz:'实际人/日数依受审工厂规模和认证产品数量而定（一般为4-6个人/日，包括文审人/日数）',fee1:'1000'},
+      {id:'4',project:'申请费',fee:'1000',bz:'实际人/日数依受审工厂规模和认证产品数量而定（一般为4-6个人/日，包括文审人/日数）',fee1:'1000'},
+      {id:'5',project:'申请费',fee:'1000',bz:'实际人/日数依受审工厂规模和认证产品数量而定（一般为4-6个人/日，包括文审人/日数）',fee1:'1000'},
+      {id:'6',project:'申请费',fee:'1000',bz:'实际人/日数依受审工厂规模和认证产品数量而定（一般为4-6个人/日，包括文审人/日数）',fee1:'1000'},
+      {project:'费用合计',fee:'6000',fee1:'6000'},
+      {project:'优惠后总费用',fee:'6000',fee1:'6000'}
     ]
   });
-  $('.common .layui-table-body tr').eq(-2).addClass('bgcolor');
-  $('.common .layui-table-body tr').eq(-1).addClass('bgcolor');
-  $('.common .layui-table-body tr').eq(-2).children().eq(-1).remove();
-  $('.common .layui-table-body tr').eq(-2).children().eq(0).remove();
-  $('.common .layui-table-body tr').eq(-1).children().eq(-1).remove();
-  $('.common .layui-table-body tr').eq(-1).children().eq(0).remove();
-  $('.common .layui-table-body tr').eq(-2).children().eq(0).attr('colspan',2);
-  $('.common .layui-table-body tr').eq(-2).children().eq(1).attr('colspan',2);
-  $('.common .layui-table-body tr').eq(-1).children().eq(0).attr('colspan',2);
-  $('.common .layui-table-body tr').eq(-1).children().eq(1).attr('colspan',2);
+  $('#payDetail .layui-table-body tr').eq(-2).addClass('bgcolor');
+  $('#payDetail .layui-table-body tr').eq(-1).addClass('bgcolor');
+  $('#payDetail .layui-table-body tr').eq(-2).children().eq(-2).remove();
+  $('#payDetail .layui-table-body tr').eq(-2).children().eq(0).remove();
+  $('#payDetail .layui-table-body tr').eq(-1).children().eq(-2).remove();
+  $('#payDetail .layui-table-body tr').eq(-1).children().eq(0).remove();
+  $('#payDetail .layui-table-body tr').eq(-2).children().eq(0).attr('colspan',2);
+  $('#payDetail .layui-table-body tr').eq(-2).children().eq(2).attr('colspan',2);
+  $('#payDetail .layui-table-body tr').eq(-1).children().eq(0).attr('colspan',2);
+  $('#payDetail .layui-table-body tr').eq(-1).children().eq(2).attr('colspan',2);
+  $('#ensureDetail .layui-table-body tr').eq(-2).addClass('bgcolor');
+  $('#ensureDetail .layui-table-body tr').eq(-1).addClass('bgcolor');
+  $('#ensureDetail .layui-table-body tr').eq(-2).children().eq(-2).remove();
+  $('#ensureDetail .layui-table-body tr').eq(-2).children().eq(0).remove();
+  $('#ensureDetail .layui-table-body tr').eq(-1).children().eq(-2).remove();
+  $('#ensureDetail .layui-table-body tr').eq(-1).children().eq(0).remove();
+  $('#ensureDetail .layui-table-body tr').eq(-2).children().eq(0).attr('colspan',2);
+  $('#ensureDetail .layui-table-body tr').eq(-2).children().eq(2).attr('colspan',2);
+  $('#ensureDetail .layui-table-body tr').eq(-1).children().eq(0).attr('colspan',2);
+  $('#ensureDetail .layui-table-body tr').eq(-1).children().eq(2).attr('colspan',2);
   table.render({
     elem: '#table4',
     url:'',

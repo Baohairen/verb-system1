@@ -60,15 +60,15 @@ body,html{
     box-sizing: border-box; 
 }
 .login .main #main_main1{
-    width: 350px;
-    height: 330px;
+    width: 400px;
+    height: 360px;
     position: absolute;
     top: 20%;
     right: 10%;
 }
 .login .main #main_main2{
-    width: 375px;
-    height: 375px;
+    width: 420px;
+    height: 400px;
     position: absolute;
     top: 20%;
     right: 10%;
@@ -89,7 +89,7 @@ body,html{
     font-size: 12px;
 }
 .login .main #main_main3 .layui-col-md6 {
-    height: 30px;
+    height: 40px;
     margin-bottom: 10px;
 }
 .login .main #main_main3 .layui-col-md6 .layui-form-label {
@@ -97,17 +97,17 @@ body,html{
     width: 120px;
 }
 .login .main #main_main3 .layui-col-md6 .layui-input-block {
-    min-height: 30px;
+    min-height: 40px;
 }
 .login .main #main_main3 .layui-col-md6 input{
-    height: 30px;
+    height: 40px;
     
 }
 .login .main #main_main3 .layui-col-md6 input.layui-input{
     width: 86%;
 }
 .login .main #main_main3 .layui-col-md6 .layui-form-radio {
-    line-height: 30px;
+    line-height: 40px;
     margin: 0;
 }
 .login .main #main_main3 .layui-col-md6 .layui-form-radio>i {
@@ -121,7 +121,7 @@ body,html{
     font-size: 12px;
 }
 .login .main #main_main3 .layui-col-md6 .layui-form-label{
-    line-height: 12px;
+    line-height: 20px;
 }
 .login .main #main_main3 .layui-col-md6 .layui-form-select{
     width: 28%;
@@ -193,7 +193,7 @@ body,html{
     width: 100%;
 }
 .login .main #main_main3 .layui-col-md6 .layui-form-select .layui-edge {
-    /* right: 35px; */
+    /* right: 40px; */
 }
 .login .main .main_main p{
     height:21px;
@@ -232,9 +232,8 @@ body,html{
 }
 .login .main .main_main .input_div{
     width: 90%;
-    height: 37.5px;
-    line-height: 34px;
-    /* border:1px solid rgba(200, 202, 206, 1); */
+    height: 40px;
+    line-height: 40px;
     background: rgba(247,247,247,1);
     border-radius:2px;
     margin-bottom: 20px;
@@ -257,7 +256,6 @@ body,html{
     font-weight:400;
     background: rgba(247,247,247,1);
     color:rgba(181,181,181,1);
-    line-height:2px;
     margin-left: 10px;
     text-indent: 10px;
     border: none;
@@ -278,8 +276,8 @@ body,html{
 }
 .login .main #main_main1 button,.login .main #main_main2 button{
     margin: 10px 0 20px;
-    height:35px;
-    line-height: 35px;
+    height:40px;
+    line-height: 40px;
     font-size:13px;
     font-family:MicrosoftYaHei;
     font-weight:400;

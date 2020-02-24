@@ -198,12 +198,12 @@
   overflow: visible;
 }
 /* 调整高度 */
-#newB td .layui-form-select{
+td .layui-form-select{
   margin-top: -10px;
   margin-left: -15px;
   margin-right: -15px;
 }
-#newB td .layui-form-select,#newB td .layui-input{
+td .layui-form-select,td .layui-input{
   margin-top: -4px;
   margin-left: -15px;
   margin-right: -15px;
