@@ -304,7 +304,7 @@ ul li a{
     display: block;
     padding-right: 40px;
 }
-.step .title,#payDetail .title{
+.step .title,.common .title{
     line-height: 40px;
     color: #666;
     font-size: 14px;
@@ -337,7 +337,7 @@ ul li a{
     padding-right: 0;
 }
 .layui-form-radio>i:hover, .layui-form-radioed>i {
-    color: #09a7ec;
+    color: #2077E2;
 }
 .step1 .mods .fw,.step4 .mods .fw{
     border: none;
@@ -378,7 +378,7 @@ ul li a{
 .fw .infos p span{
     font-weight: bold;
 }
-.step2 .form,.step3 .form,#payDetail .form{
+.step2 .form,.step3 .form,.common .form{
     border: 1px solid #eee;
 }
 .form1{
@@ -423,7 +423,7 @@ ul li a{
     display: none!important;
 }
 .layui-laypage .layui-laypage-curr .layui-laypage-em {
-    background-color: #009ee2;
+    background-color: #2F87F5;
 }
 #audit .layui-form{
     border-right: none;
@@ -442,10 +442,28 @@ ul li a{
 .form_table .layui-btn{
     font-size: 14px;
 }
+.form_table .layui-form-select{
+    width: 160px;
+    margin-right: 10px;
+}
+.form_table .layui-form-select .layui-input{
+    width: 100%;
+}
 .btn1{
-    background: #009fe5;
+    background: #2F87F5;
     color: #fff;
     border: none;
+}
+.btn2{
+    background: #EAEDF4;
+    color: #333333;
+    border: none;
+}
+.btn3{
+    margin-left: auto!important;
+}
+.btn3:hover{
+    border: 1px solid #C9C9C9;
 }
 .btn1:hover{
     color: #fff;
@@ -470,7 +488,7 @@ ul li a{
     display: inline-block;
     margin: 0 10px;
 }
-.useInfo .fw .layui-btn-primary,.useInfo .fw .layui-btn-primary:hover{
+.useInfo .fw .layui-btn-primary,.useInfo .fw .layui-btn-primary:hover,#newB .layui-btn-primary,#newB .layui-btn-primary:hover{
     color: #fff;
     background: #2077E2;
     border-radius: 2px;

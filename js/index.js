@@ -7,10 +7,7 @@ layui.use('form', function(){
   
   //监听提交
   form.on('submit(nextStep)', function(data){
-    console.log(data.field)
-    $('.step').hide();
-    $('.second').addClass('active');
-    $('.step2').show();
+    
     return false;
   });
   form.on('radio(product)', function(data){
@@ -19,6 +16,33 @@ layui.use('form', function(){
     console.log(data.value); //被点击的radio的value值
   });  
 });
+layui.use('upload', function(){
+  var upload = layui.upload;
+   
+  //执行实例
+  var uploadInst = upload.render({
+    elem: '#else' //绑定元素
+    ,accept:'images'
+    ,url: '/upload/' //上传接口
+    ,done: function(res){
+      //上传完毕回调
+    }
+    ,error: function(){
+      //请求异常回调
+    }
+  });
+  var uploadInst1 = upload.render({
+    elem: '#pz' //绑定元素
+    ,accept:'images'
+    ,url: '/upload/' //上传接口
+    ,done: function(res){
+      //上传完毕回调
+    }
+    ,error: function(){
+      //请求异常回调
+    }
+  });
+})
 layui.use('table', function(){
   var table = layui.table;
   
@@ -37,7 +61,7 @@ layui.use('table', function(){
       ,{field:'sqsj', title: '申请时间',align:'center'}
       ,{field:'dqzt', title: '当前状态',align:'center'}
       ,{field:'dqjd', title: '当前阶段',align:'center'}
-      ,{fixed: 'right', title:'操作', toolbar: '#barDemo',align:'center'}
+      ,{fixed: 'right', title:'操作', toolbar: '#barDemo',align:'center',width:150}
     ]],
     page: true,
     limit:12,
@@ -73,7 +97,6 @@ layui.use('table', function(){
       ,{field:'size',  title: '文件大小',align:'center',width:100}
       ,{fixed: 'right', title:'操作', toolbar: '#barDemo1',align:'center',width:180}
     ]],
-    page: true,
     limit:12,
     data:[
       {info:'申请方、制造方、生产厂法律地位证明（法人营业执照复印件，三者不同需分别提供， 若委托人为代理，须提交授权委托书及授权双方身',file:'申请方证明.pdf,制造方证明.pdf,生产厂证明.pdf',time:'2019-03-15 17:27',size:'180kb'},
@@ -92,8 +115,8 @@ layui.use('table', function(){
     url:'',
     cols: [[
       {field:'id', title: '序号',align:'center',width:110}
-      ,{field:'project', title: '收费项目',align:'center'}
-      ,{field:'fee', title: '费用（人民币/元）',align:'center'}
+      ,{field:'project', title: '收费项目',align:'center',width:150}
+      ,{field:'fee', title: '费用（人民币/元）',align:'center',width:150}
       ,{field:'bz',  title: '备注',align:'center',width:'50%'}
     ]],
     limit:12,
@@ -104,16 +127,61 @@ layui.use('table', function(){
       {id:'4',project:'申请费',fee:'1000',bz:'实际人/日数依受审工厂规模和认证产品数量而定（一般为4-6个人/日，包括文审人/日数）'},
       {id:'5',project:'申请费',fee:'1000',bz:'实际人/日数依受审工厂规模和认证产品数量而定（一般为4-6个人/日，包括文审人/日数）'},
       {id:'6',project:'申请费',fee:'1000',bz:'实际人/日数依受审工厂规模和认证产品数量而定（一般为4-6个人/日，包括文审人/日数）'},
-      {id:'费用合计',project:'6000'},
-      {id:'优惠后总费用',project:'6000'}
+      {project:'费用合计',fee:'6000'},
+      {project:'优惠后总费用',fee:'6000'}
     ]
   });
-  $('#payDetail .layui-table-body tr').eq(-2).addClass('bgcolor');
-  $('#payDetail .layui-table-body tr').eq(-1).addClass('bgcolor');
-  $('#payDetail .layui-table-body tr').eq(-2).children().eq(0).attr('colspan',2);
-  $('#payDetail .layui-table-body tr').eq(-2).children().eq(1).attr('colspan',2);
-  $('#payDetail .layui-table-body tr').eq(-1).children().eq(0).attr('colspan',2);
-  $('#payDetail .layui-table-body tr').eq(-1).children().eq(1).attr('colspan',2);
+  table.render({
+    elem: '#table3',
+    url:'',
+    cols: [[
+      {field:'id', title: '序号',align:'center',width:110}
+      ,{field:'project', title: '收费项目',align:'center',width:150}
+      ,{field:'fee', title: '费用（人民币/元）',align:'center',width:150}
+      ,{field:'bz',  title: '备注',align:'center',width:'50%'}
+    ]],
+    limit:12,
+    data:[
+      {id:'1',project:'申请费',fee:'1000',bz:'实际人/日数依受审工厂规模和认证产品数量而定（一般为4-6个人/日，包括文审人/日数）'},
+      {id:'2',project:'申请费',fee:'1000',bz:'实际人/日数依受审工厂规模和认证产品数量而定（一般为4-6个人/日，包括文审人/日数）'},
+      {id:'3',project:'申请费',fee:'1000',bz:'实际人/日数依受审工厂规模和认证产品数量而定（一般为4-6个人/日，包括文审人/日数）'},
+      {id:'4',project:'申请费',fee:'1000',bz:'实际人/日数依受审工厂规模和认证产品数量而定（一般为4-6个人/日，包括文审人/日数）'},
+      {id:'5',project:'申请费',fee:'1000',bz:'实际人/日数依受审工厂规模和认证产品数量而定（一般为4-6个人/日，包括文审人/日数）'},
+      {id:'6',project:'申请费',fee:'1000',bz:'实际人/日数依受审工厂规模和认证产品数量而定（一般为4-6个人/日，包括文审人/日数）'},
+      {project:'费用合计',fee:'6000'},
+      {project:'优惠后总费用',fee:'6000'}
+    ]
+  });
+  $('.common .layui-table-body tr').eq(-2).addClass('bgcolor');
+  $('.common .layui-table-body tr').eq(-1).addClass('bgcolor');
+  $('.common .layui-table-body tr').eq(-2).children().eq(-1).remove();
+  $('.common .layui-table-body tr').eq(-2).children().eq(0).remove();
+  $('.common .layui-table-body tr').eq(-1).children().eq(-1).remove();
+  $('.common .layui-table-body tr').eq(-1).children().eq(0).remove();
+  $('.common .layui-table-body tr').eq(-2).children().eq(0).attr('colspan',2);
+  $('.common .layui-table-body tr').eq(-2).children().eq(1).attr('colspan',2);
+  $('.common .layui-table-body tr').eq(-1).children().eq(0).attr('colspan',2);
+  $('.common .layui-table-body tr').eq(-1).children().eq(1).attr('colspan',2);
+  table.render({
+    elem: '#table4',
+    url:'',
+    cols: [[
+      {field: 'bzgg', title: '标志规格',align: 'center',width:150},
+      {field: 'sgdw', title: '申购单位',align: 'center', templet:'#selectSgdw',width:200},
+      {field: 'gg', title: '规格',align: 'center', templet:'#selectGg',width:200},
+      {field: 'dj', title: '单价（元/枚）',align: 'center',width:200},
+      {field: 'sl', title: '数量',align: 'center', templet:'#count',width:200},
+      {field: 'xj', title: '小计',align: 'center',width:150}
+    ]],
+    limit:12,
+    data:[
+      {bzgg:'□ 8MM',sgdw:'1',gg:'1',dj:'',sl:'',xj:''},
+      {bzgg:'□ 15MM',sgdw:'1',gg:'1',dj:'',sl:'',xj:''},
+      {bzgg:'□ 30MM',sgdw:'1',gg:'1',dj:'',sl:'',xj:''},
+      {bzgg:'□ 45MM',sgdw:'1',gg:'1',dj:'',sl:'',xj:''},
+      {bzgg:'□ 60MM',sgdw:'1',gg:'1',dj:'',sl:'',xj:''},
+    ]
+  });
 });
 var firstMenu = 'apply';
 var headerInfo = '';

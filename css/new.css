@@ -99,7 +99,7 @@
   font-size: 13px;
   color: #171A1E;
 }
-.step2 .title40,.step3 .title40,#payDetail .title40{
+.step2 .title40,.step3 .title40,.common .title40{
   line-height: 40px;
 }
 .step2 .form .layui-form-item .noleft .layui-form-label{
@@ -130,14 +130,16 @@
   color: #333;
   font-size: 14px;
 }
-#payDetail{
+.common{
   padding: 10px 20px;
 }
-#payDetail .layui-form-item .layui-form-label{
+.common .layui-form-item .layui-form-label{
   width: 100px;
+  color: #666666;
 }
-#payDetail .layui-form-item .layui-form-label + .layui-input-block{
+.common .layui-form-item .layui-form-label + .layui-input-block{
   margin-left: 100px;
+  color: #333;
 }
 .boder_1{
   color: #2077E2;
@@ -154,19 +156,83 @@
   top: 3px;
   background: #2077E2;
 }
-#payDetail .layui-table,#payDetail .layui-table-view{
+.common .layui-table,.common .layui-table-view{
   margin-top: 0;
 }
-#payDetail .form1{
+.common .form1{
   margin-top: 15px;
 }
-#payDetail .layui-input-block{
+.common .layui-input-block{
   line-height: 36px;
 }
-#payDetail .layui-input{
+.common .layui-input{
   width: 200px;
   display: inline-block;
 }
-#payDetail .layui-textarea{
+.common .layui-textarea{
   width: 94%;
+}
+.common .productInfo{
+  padding: 10px 0;
+}
+.common .img_div{
+  display: flex;
+}
+.common .img_div .left img{
+  border-radius: 5px;
+  margin-right: 10px;
+}
+.common .img_div img{
+  width: 120px;
+  height: 120px;
+}
+#newB .layui-table-cell {
+  overflow: visible;
+}
+
+#newB .layui-table-box {
+  overflow: visible;
+}
+
+#newB .layui-table-body {
+  overflow: visible;
+}
+/* 调整高度 */
+#newB td .layui-form-select{
+  margin-top: -10px;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+#newB td .layui-form-select,#newB td .layui-input{
+  margin-top: -4px;
+  margin-left: -15px;
+  margin-right: -15px;
+  width: 95%;
+  border: none;
+  background: 0;
+}
+#newB .layui-input{
+  width: 70%;
+}
+.flexbox{
+  display: flex;
+}
+#newB .flexbox{
+  width: 70%;
+}
+#newB .flexbox .layui-input{
+  width: 90%;
+}
+#newB .flexbox .layui-btn{
+  margin-left: 15px;
+}
+#newB .layui-form-select dl dd.layui-this{
+  background-color: #2077E2;
+}
+.disabled{
+  background: #f2f2f2;
+  border-radius: 2px;
+}
+.layui-side .layui-nav .layui-nav-item>a.active{
+  color: #2F87F5;
 }

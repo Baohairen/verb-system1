@@ -56,9 +56,8 @@ body,html{
     box-shadow:0px 4px 12px 0px rgba(23,55,67,0.24);
     border-radius:10px;
     text-align: center;
-    padding: 2% 4%;
-    box-sizing: border-box;
-    
+    padding: 2% 3%;
+    box-sizing: border-box; 
 }
 .login .main #main_main1{
     width: 350px;
@@ -95,7 +94,7 @@ body,html{
 }
 .login .main #main_main3 .layui-col-md6 .layui-form-label {
     padding: 9px 0px;
-    width: 105px;
+    width: 120px;
 }
 .login .main #main_main3 .layui-col-md6 .layui-input-block {
     min-height: 30px;
@@ -167,6 +166,9 @@ body,html{
 .btn .reset{
     background:rgba(234,237,244,1);
     color: #000;
+}
+.btn .reset:hover{
+    border-color: #028BFF;
 }
 .btn .register{
     color: #fff;
@@ -286,7 +288,7 @@ body,html{
     border: none;
     background:linear-gradient(-90deg,rgba(50,183,240,1) 0%,rgba(20,94,202,1) 100%);
     box-shadow:0px 4px 9px 0px rgba(0,138,255,0.41);
-    border-radius:13px;
+    border-radius:18px;
 }
 .layui-container {
     width: 100%!important;
@@ -313,4 +315,7 @@ body,html{
 .login .footer img{
     width: 25.5px;
     height: auto;
+}
+a{
+    cursor: pointer;
 }
