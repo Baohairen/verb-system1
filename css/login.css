@@ -68,7 +68,7 @@ body,html{
 }
 .login .main #main_main2{
     width: 420px;
-    height: 400px;
+    height: 420px;
     position: absolute;
     top: 20%;
     right: 10%;
@@ -97,11 +97,11 @@ body,html{
     width: 120px;
 }
 .login .main #main_main3 .layui-col-md6 .layui-input-block {
+    padding: 9px 0px;
     min-height: 40px;
 }
 .login .main #main_main3 .layui-col-md6 input{
-    height: 40px;
-    
+    height: 40px; 
 }
 .login .main #main_main3 .layui-col-md6 input.layui-input{
     width: 86%;
@@ -121,7 +121,7 @@ body,html{
     font-size: 12px;
 }
 .login .main #main_main3 .layui-col-md6 .layui-form-label{
-    line-height: 20px;
+    line-height: 40px;
 }
 .login .main #main_main3 .layui-col-md6 .layui-form-select{
     width: 28%;
@@ -157,7 +157,7 @@ body,html{
 }
 .btn{
     text-align: center;
-    margin-top: 8%;
+    margin-top: 75px;
 }
 .btn button{
     width: 140px;
@@ -166,6 +166,7 @@ body,html{
 .btn .reset{
     background:rgba(234,237,244,1);
     color: #000;
+    margin-right: 60px;
 }
 .btn .reset:hover{
     border-color: #028BFF;
@@ -196,7 +197,8 @@ body,html{
     /* right: 40px; */
 }
 .login .main .main_main p{
-    height:21px;
+    height:40px;
+    line-height: 40px;
     font-size:16px;
     font-family:MicrosoftYaHei;
     font-weight:400;
@@ -215,11 +217,11 @@ body,html{
     padding-left: 5%;
 }
 .toLogin{
-    font-size:12px;
+    font-size:13px;
     font-family:MicrosoftYaHei;
     font-weight:400;
     color:rgba(47,135,245,1);
-    line-height:4px;
+    line-height:40px;
 }
 .login .main .main_main .header{
     width: 85%;
@@ -316,4 +318,22 @@ body,html{
 }
 a{
     cursor: pointer;
+}
+@media screen and (min-height: 900px){
+    .login .main #main_main3{
+        height:78%;
+        top: 10%;
+    }
+    .btn{
+        margin-top: 100px;
+    }
+}
+@media screen and (min-height: 1000px){
+    .login .main #main_main3{
+        height:70%;
+        top: 14%;
+    }
+    .btn{
+        margin-top: 100px;
+    }
 }
