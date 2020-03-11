@@ -253,16 +253,22 @@ body,html{
 .login .main .main_main .input_div input{
     width: 85%;
     height: 100%;
-    font-size:10px;
+    font-size:14px;
     font-family:MicrosoftYaHei;
     font-weight:400;
-    background: rgba(247,247,247,1);
-    color:rgba(181,181,181,1);
+    background: none;
+    color:#333;
     margin-left: 10px;
     text-indent: 10px;
     border: none;
     /* border-left:1px solid rgba(216,214,214,1) ; */
 }
+.login .main .main_main .input_div input::-webkit-input-placeholder { 
+   color:rgba(181,181,181,1);
+}
+.login .main .main_main .input_div input::-moz-placeholder {color:rgba(181,181,181,1);} /* firefox 19+ */
+.login .main .main_main .input_div input:-ms-input-placeholder {color:rgba(181,181,181,1); } /* Internet Explorer 10+ */
+.login .main .main_main .input_div input:-moz-placeholder {color:rgba(181,181,181,1);} /* firefox 14-18 */
 .getCode{
     font-size:12px;
     font-family:MicrosoftYaHei;
